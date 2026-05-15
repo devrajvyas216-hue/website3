@@ -62,14 +62,25 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const loginWithGoogle = async () => {
     const { auth, googleProvider } = getFirebase();
     if (!auth || !googleProvider) {
-      alert("Authentication is currently unavailable. Please check your setup.");
+      console.error('Firebase Auth or Google Provider not initialized. Check firebase-applet-config.json');
+      alert("Authentication setup is incomplete. Please ensure your Firebase credentials are correct.");
       return;
     }
 
     try {
-      await signInWithPopup(auth, googleProvider);
-    } catch (error) {
-      console.error('Login failed:', error);
+      console.log('Attempting Google Sign-In...');
+      const result = await signInWithPopup(auth, googleProvider);
+      console.log('Login successful for:', result.user.email);
+    } catch (error: any) {
+      console.error('Firebase Login Error:', error.code, error.message);
+      
+      if (error.code === 'auth/unauthorized-domain') {
+        alert("This domain is not authorized in your Firebase console. Please add your Vercel URL to 'Authorized Domains' in Firebase Authentication settings.");
+      } else if (error.code === 'auth/popup-blocked') {
+        alert("Sign-in popup was blocked by your browser. Please allow popups for this site.");
+      } else {
+        alert(`Login failed: ${error.message}`);
+      }
     }
   };
 
