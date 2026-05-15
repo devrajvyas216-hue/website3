@@ -41,9 +41,10 @@ export default function Home() {
         {!user && (
           <button 
             onClick={loginWithGoogle}
+            aria-label="Sign up with Google"
             className="flex items-center gap-3 px-6 py-3 bg-indigo-600 text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-slate-900 transition-all shadow-xl shadow-indigo-100 active:scale-95"
           >
-            <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google" className="w-4 h-4 invert brightness-0" />
+            <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="" aria-hidden="true" width="16" height="16" className="invert brightness-0" />
             Sign Up Free
           </button>
         )}
@@ -60,9 +61,9 @@ export default function Home() {
       {/* Tools Section */}
       <div className="flex items-center justify-between mb-8">
         <h2 className="text-2xl font-black text-slate-900 tracking-tight flex items-center gap-2"> 
-           Popular Tools <ChevronRight size={24} className="text-indigo-600" /> 
+           Popular Tools <ChevronRight size={24} className="text-indigo-600" aria-hidden="true" /> 
         </h2>
-        <Link to="/all-tools" className="text-xs font-black text-indigo-600 hover:bg-indigo-50 px-4 py-2 rounded-lg uppercase tracking-widest transition-colors">
+        <Link to="/all-tools" aria-label="Explore all 20 PDF tools" className="text-xs font-black text-indigo-600 hover:bg-indigo-50 px-4 py-2 rounded-lg uppercase tracking-widest transition-colors">
           Explore All 20 Tools
         </Link>
       </div>
@@ -81,14 +82,14 @@ export default function Home() {
             >
               {tool.premium && (
                 <div className="absolute top-0 right-0 bg-amber-400 text-amber-950 text-[8px] font-black uppercase px-2 py-1 flex items-center gap-1 rounded-bl-lg">
-                   <Lock size={8} /> Pro
+                   <Lock size={8} aria-hidden="true" /> Pro
                 </div>
               )}
               <div className="flex items-start justify-between mb-6">
                 <div className={`p-4 rounded-xl ${tool.accent} group-hover:scale-110 transition-transform shadow-sm`}>
-                  <tool.icon size={24} />
+                  <tool.icon size={24} aria-hidden="true" />
                 </div>
-                <ArrowRight size={18} className="text-slate-200 group-hover:text-indigo-500 transform group-hover:translate-x-1 transition-all" />
+                <ArrowRight size={18} className="text-slate-200 group-hover:text-indigo-500 transform group-hover:translate-x-1 transition-all" aria-hidden="true" />
               </div>
               <h3 className="text-lg font-black text-slate-900 mb-2">{tool.name}</h3>
               <p className="text-xs text-slate-500 leading-relaxed mb-6 flex-grow">
@@ -112,16 +113,18 @@ export default function Home() {
              <div className="flex flex-wrap gap-4">
                 <button 
                   onClick={loginWithGoogle}
+                  aria-label="Sign up with Google"
                   className="px-8 py-4 bg-white text-slate-900 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-slate-50 transition-all flex items-center gap-3 shadow-lg"
                 >
-                  <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google" className="w-5 h-5" />
+                  <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="" aria-hidden="true" className="w-5 h-5" loading="lazy" />
                   Sign up with Google
                 </button>
                 <button 
                   onClick={() => alert("Apple Sign-in is coming soon!")}
+                  aria-label="Sign in with Apple ID (Coming Soon)"
                   className="px-8 py-4 bg-indigo-600 text-white rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-indigo-700 transition-all flex items-center gap-3 shadow-lg"
                 >
-                   <Apple size={20} />
+                   <Apple size={20} aria-hidden="true" />
                    Apple ID
                 </button>
              </div>
@@ -175,22 +178,22 @@ export default function Home() {
         <aside className="space-y-6">
           <div className="bg-slate-900 text-white rounded-[2rem] p-8 shadow-2xl">
             <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
-               <FileText size={20} className="text-indigo-400" />
+               <FileText size={20} className="text-indigo-400" aria-hidden="true" />
                Latest Guides
             </h3>
             <ul className="space-y-6">
               {blogTopics.map(topic => (
                 <li key={topic.slug} className="group">
                   <Link to={`/blog/${topic.slug}`} className="text-sm font-bold text-slate-300 hover:text-white flex items-start gap-3 group-hover:translate-x-1 transition-all">
-                    <div className="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-1.5 shrink-0"></div>
+                    <div className="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-1.5 shrink-0" aria-hidden="true"></div>
                     {topic.title}
                   </Link>
                 </li>
               ))}
             </ul>
             <div className="mt-10 pt-6 border-t border-white/10">
-               <Link to="/blog" className="text-[10px] font-black text-indigo-400 hover:text-white uppercase tracking-widest flex items-center gap-2">
-                 Visit the Swift Blog <ArrowRight size={12} />
+               <Link to="/blog" aria-label="Visit our blog for more guides" className="text-[10px] font-black text-indigo-400 hover:text-white uppercase tracking-widest flex items-center gap-2">
+                 Visit the Swift Blog <ArrowRight size={12} aria-hidden="true" />
                </Link>
             </div>
           </div>
@@ -204,7 +207,7 @@ function QuickStat({ icon: Icon, label, value, color }: any) {
   return (
     <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all group">
       <div className="flex items-center gap-2 mb-3">
-        <Icon size={16} className="text-slate-400 group-hover:text-indigo-500 transition-colors" />
+        <Icon size={16} className="text-slate-400 group-hover:text-indigo-500 transition-colors" aria-hidden="true" />
         <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">{label}</span>
       </div>
       <p className={`text-2xl font-black tracking-tight ${color}`}>{value}</p>
