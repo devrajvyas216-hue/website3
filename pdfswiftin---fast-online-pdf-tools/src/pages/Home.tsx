@@ -7,7 +7,7 @@ import { ALL_TOOLS } from '../constants';
 import { useAuth } from '../AuthContext';
 
 export default function Home() {
-  const { loginWithGoogle } = useAuth();
+  const { user, loginWithGoogle } = useAuth();
   
   // Show first 8 tools on home for better density
   const featuredTools = ALL_TOOLS.slice(0, 8);
@@ -28,13 +28,25 @@ export default function Home() {
       
       <div className="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-4">
         <div>
-          <h1 className="text-4xl font-black text-slate-900 tracking-tighter sm:text-5xl">PDF Solutions Simplified.</h1>
-          <p className="text-slate-500 text-lg mt-2 max-w-xl">Professional tools for fast, secure, and private PDF manipulation. 20+ utilities at your fingertips.</p>
+          <h1 className="text-4xl font-black text-slate-900 tracking-tighter sm:text-5xl">
+            {user ? `Welcome back, ${user.displayName?.split(' ')[0]}!` : 'PDF Solutions Simplified.'}
+          </h1>
+          <p className="text-slate-500 text-lg mt-2 max-w-xl">
+            {user 
+              ? 'Your professional workspace is ready. Access all pro utilities and manage your documents with zero latency.' 
+              : 'Professional tools for fast, secure, and private PDF manipulation. 20+ utilities at your fingertips.'
+            }
+          </p>
         </div>
-        <div className="bg-white border border-slate-200 px-4 py-2 rounded-xl flex items-center gap-2 shadow-sm shrink-0 self-start md:self-end">
-           <Zap size={14} className="text-amber-500" />
-           <span className="text-xs font-bold text-slate-600 uppercase tracking-widest">Swift Engine V4.2</span>
-        </div>
+        {!user && (
+          <button 
+            onClick={loginWithGoogle}
+            className="flex items-center gap-3 px-6 py-3 bg-indigo-600 text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-slate-900 transition-all shadow-xl shadow-indigo-100 active:scale-95"
+          >
+            <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google" className="w-4 h-4 invert brightness-0" />
+            Sign Up Free
+          </button>
+        )}
       </div>
 
       {/* Hero Stats */}
