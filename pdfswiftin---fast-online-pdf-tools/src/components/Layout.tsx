@@ -22,7 +22,7 @@ export default function Layout() {
         <div className="flex items-center gap-8">
           <Link to="/" className="flex items-center gap-2 group">
             <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white transition-transform group-hover:scale-110 shadow-sm shadow-indigo-200">
-              <FileCheck size={18} />
+              <FileCheck size={18} aria-hidden="true" />
             </div>
             <span className="text-xl font-black text-slate-900 tracking-tighter">PDFSwiftin</span>
           </Link>
@@ -42,15 +42,16 @@ export default function Layout() {
           </nav>
         </div>
         
-        <div className="flex-1 max-w-xl px-12 hidden lg:block">
+        <div className="flex-1 max-w-xl px-12 hidden lg:block" role="search">
           <div className="relative">
             <input 
               type="text" 
               placeholder="Search 20+ PDF tools..." 
+              aria-label="Search PDF tools"
               className="w-full bg-slate-100 border-none rounded-2xl py-2 pl-10 pr-4 text-sm focus:ring-2 focus:ring-indigo-500 outline-none transition-all"
             />
             <div className="absolute left-3 top-2.5 text-slate-400">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
             </div>
@@ -74,11 +75,15 @@ export default function Layout() {
                 <span className="text-[10px] text-slate-400 font-medium">{user.email}</span>
               </div>
               <div className="relative group">
-                <button className="w-9 h-9 rounded-full bg-slate-200 border-2 border-white shadow-sm overflow-hidden flex items-center justify-center">
+                <button 
+                  className="w-9 h-9 rounded-full bg-slate-200 border-2 border-white shadow-sm overflow-hidden flex items-center justify-center cursor-pointer"
+                  aria-label="User menu"
+                  aria-haspopup="true"
+                >
                   {user.photoURL ? (
-                    <img src={user.photoURL} alt={user.displayName || ''} className="w-full h-full object-cover" />
+                    <img src={user.photoURL} alt={user.displayName || 'User profile'} className="w-full h-full object-cover" loading="lazy" />
                   ) : (
-                    <UserIcon size={18} className="text-slate-500" />
+                    <UserIcon size={18} className="text-slate-500" aria-hidden="true" />
                   )}
                 </button>
                 <div className="absolute right-0 top-full mt-2 w-48 bg-white border border-slate-200 rounded-xl shadow-xl p-2 invisible group-hover:visible translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all z-[60]">
@@ -122,7 +127,7 @@ export default function Layout() {
                           : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'
                       }`}
                     >
-                      <tool.icon size={16} className={isActive ? 'text-indigo-600' : 'text-slate-400'} />
+                      <tool.icon size={16} className={isActive ? 'text-indigo-600' : 'text-slate-400'} aria-hidden="true" />
                       {tool.name}
                     </Link>
                   );
@@ -147,10 +152,10 @@ export default function Layout() {
                           : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'
                       }`}
                     >
-                      <tool.icon size={16} className={isActive ? 'text-indigo-600' : 'text-slate-400 group-hover:text-slate-600'} />
+                      <tool.icon size={16} className={isActive ? 'text-indigo-600' : 'text-slate-400 group-hover:text-slate-600'} aria-hidden="true" />
                       <span className="flex-1 truncate">{tool.name}</span>
                       {tool.premium && (
-                        <Lock size={10} className="text-amber-500" />
+                        <Lock size={10} className="text-amber-500" aria-hidden="true" />
                       )}
                     </Link>
                   );
@@ -194,10 +199,10 @@ export default function Layout() {
         </p>
         <div className="flex gap-6">
           <Link to="/privacy" className="text-[10px] font-bold text-slate-500 hover:text-indigo-600 uppercase tracking-widest flex items-center gap-1">
-            <Shield size={10} /> Privacy
+            <Shield size={10} aria-hidden="true" /> Privacy
           </Link>
           <Link to="/terms" className="text-[10px] font-bold text-slate-500 hover:text-indigo-600 uppercase tracking-widest flex items-center gap-1">
-            <Scale size={10} /> Terms
+            <Scale size={10} aria-hidden="true" /> Terms
           </Link>
           <Link to="/about" className="text-[10px] font-bold text-slate-500 hover:text-indigo-600 uppercase tracking-widest">
             Why PDFSwiftin?
