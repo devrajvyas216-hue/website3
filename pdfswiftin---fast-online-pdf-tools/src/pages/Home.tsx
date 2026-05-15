@@ -87,9 +87,9 @@ export default function Home() {
               )}
               <div className="flex items-start justify-between mb-6">
                 <div className={`p-4 rounded-xl ${tool.accent} group-hover:scale-110 transition-transform shadow-sm`}>
-                  <tool.icon size={24} aria-hidden="true" />
+                  <tool.icon size={24} aria-hidden="true" width={24} height={24} />
                 </div>
-                <ArrowRight size={18} className="text-slate-200 group-hover:text-indigo-500 transform group-hover:translate-x-1 transition-all" aria-hidden="true" />
+                <ArrowRight size={18} className="text-slate-200 group-hover:text-indigo-500 transform group-hover:translate-x-1 transition-all" aria-hidden="true" width="18" height="18" />
               </div>
               <h3 className="text-lg font-black text-slate-900 mb-2">{tool.name}</h3>
               <p className="text-xs text-slate-500 leading-relaxed mb-6 flex-grow">
@@ -101,8 +101,8 @@ export default function Home() {
       </div>
 
       {/* Auth Banner */}
-      <section className="mb-20 bg-slate-900 rounded-[2.5rem] p-12 text-white overflow-hidden relative">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-indigo-600 rounded-full blur-[120px] opacity-20 -translate-y-1/2 translate-x-1/2"></div>
+      <section className="mb-20 bg-slate-900 rounded-[2.5rem] p-12 text-white overflow-hidden relative" style={{ contentVisibility: 'auto' }}>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-indigo-600 rounded-full blur-[60px] md:blur-[120px] opacity-20 -translate-y-1/2 translate-x-1/2"></div>
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
            <div>
              <h2 className="text-3xl sm:text-4xl font-black mb-6 tracking-tight">Unlock the Full Suite.</h2>
@@ -116,7 +116,7 @@ export default function Home() {
                   aria-label="Sign up with Google"
                   className="px-8 py-4 bg-white text-slate-900 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-slate-50 transition-all flex items-center gap-3 shadow-lg"
                 >
-                  <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="" aria-hidden="true" className="w-5 h-5" loading="lazy" />
+                  <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="" aria-hidden="true" width="20" height="20" className="w-5 h-5" loading="lazy" />
                   Sign up with Google
                 </button>
                 <button 
@@ -155,7 +155,7 @@ export default function Home() {
       </section>
 
       {/* SEO Content Section */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-20">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-20" style={{ contentVisibility: 'auto' }}>
         <div className="lg:col-span-2 space-y-12">
           <article className="prose prose-slate max-w-none">
             <h2 className="text-3xl font-black text-slate-900 mb-8 tracking-tight underline decoration-indigo-500 decoration-8 underline-offset-[12px]">The Ultimate PDF Powerhouse.</h2>
@@ -193,7 +193,7 @@ export default function Home() {
             </ul>
             <div className="mt-10 pt-6 border-t border-white/10">
                <Link to="/blog" aria-label="Visit our blog for more guides" className="text-[10px] font-black text-indigo-400 hover:text-white uppercase tracking-widest flex items-center gap-2">
-                 Visit the Swift Blog <ArrowRight size={12} aria-hidden="true" />
+                 Visit the Swift Blog <ArrowRight size={12} aria-hidden="true" width="12" height="12" />
                </Link>
             </div>
           </div>
@@ -207,7 +207,7 @@ function QuickStat({ icon: Icon, label, value, color }: any) {
   return (
     <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all group">
       <div className="flex items-center gap-2 mb-3">
-        <Icon size={16} className="text-slate-400 group-hover:text-indigo-500 transition-colors" aria-hidden="true" />
+        <Icon size={16} className="text-slate-400 group-hover:text-indigo-500 transition-colors" aria-hidden="true" width="16" height="16" />
         <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">{label}</span>
       </div>
       <p className={`text-2xl font-black tracking-tight ${color}`}>{value}</p>
