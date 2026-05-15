@@ -23,6 +23,7 @@ function getFirebase() {
         app = initializeApp(firebaseConfig);
         auth = getAuth(app);
         googleProvider = new GoogleAuthProvider();
+        googleProvider.setCustomParameters({ prompt: 'select_account' });
       }
     } catch (error) {
       console.warn('Firebase configuration not found. Auth features will be disabled.');
