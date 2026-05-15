@@ -9,7 +9,7 @@ interface SEOProps {
 }
 
 export default function SEO({ title, description, keywords, canonical }: SEOProps) {
-  const siteName = "UtiliTools";
+  const siteName = "PDFSwiftin";
   const fullTitle = `${title} | ${siteName}`;
 
   return (
