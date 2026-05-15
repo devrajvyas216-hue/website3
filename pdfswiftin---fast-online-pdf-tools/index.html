@@ -8,6 +8,29 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDYOpNNm5_letLrtwtO7GNLHi9OfWT8d00",
+    authDomain: "pdfswift-8955d.firebaseapp.com",
+    projectId: "pdfswift-8955d",
+    storageBucket: "pdfswift-8955d.firebasestorage.app",
+    messagingSenderId: "644358324987",
+    appId: "1:644358324987:web:372b2a626cfc1adbc2a65e",
+    measurementId: "G-JBJPWJF983"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
   </body>
 </html>
 
