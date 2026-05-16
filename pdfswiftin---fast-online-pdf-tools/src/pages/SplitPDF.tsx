@@ -55,9 +55,9 @@ export default function SplitPDF() {
   return (
     <div className="max-w-4xl mx-auto">
       <SEO 
-        title="Split PDF Online - PDF Tool Free for Students and All" 
-        description="The safest PDF tool free for students and all to extract pages from PDF documents. High-speed local processing for assignments and homework."
-        keywords="pdf tool free for students and all, split pdf student, extract pages from pdf online, separate pdf pages"
+        title="Split PDF Online - Fastest PDF Tool Free for Students and All" 
+        description="Extract pages with the top PDF tool free for students and all. High-speed local splitting for ebooks, research, and homework. No file uploads required."
+        keywords="pdf tool free for students and all, free tools for students, split pdf student, extract pages from pdf"
       />
 
       <div className="mb-12">
