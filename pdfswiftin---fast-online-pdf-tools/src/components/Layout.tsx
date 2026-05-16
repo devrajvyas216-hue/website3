@@ -25,8 +25,8 @@ export default function Layout() {
               <FileCheck size={18} aria-hidden="true" />
             </div>
             <div className="flex flex-col -gap-1">
-              <span className="text-xl font-black text-slate-900 tracking-tighter">PDFSwift</span>
-              <span className="text-[8px] font-black text-indigo-600 uppercase tracking-[0.2em] leading-none">Pro PDF Tools & Editor Free</span>
+              <span className="text-xl font-black text-slate-900 tracking-tighter">PDFSwift <span className="text-indigo-600">| Student Suite</span></span>
+              <span className="text-[8px] font-black text-slate-400 uppercase tracking-[0.2em] leading-none">Free Private PDF Tools Online</span>
             </div>
           </Link>
 
