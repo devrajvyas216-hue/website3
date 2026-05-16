@@ -21,20 +21,20 @@ export default function Home() {
   return (
     <>
       <SEO 
-        title="PDFSwift - Free Online PDF Editor & Tools | 20+ PDF Utilities" 
-        description="The fastest free online PDF suite for students. Merge, Split, Compress, and Convert 20+ PDF formats securely in your browser."
-        keywords="free pdf editor, merge pdf online, split pdf free, protect pdf password, online pdf tools for students, pdf to word converter, compress pdf size"
+        title="PDFSwift - Free Student PDF Editor & Tools | Private Suite" 
+        description="The safest free online PDF editor for students. Merge, Split, and Convert assignments securely without uploading files to any server."
+        keywords="student pdf editor, homework pdf tools, private pdf merger, free assignment editor, secure pdf tools no upload"
       />
       
       <div className="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-4">
         <div>
           <h1 className="text-4xl font-black text-slate-900 tracking-tighter sm:text-5xl">
-            {user ? `Welcome back, ${user.displayName?.split(' ')[0]}!` : 'Free Online PDF Tools for Students & Pros.'}
+            {user ? `Welcome back, ${user.displayName?.split(' ')[0]}!` : 'Fast & Private Student PDF Tools.'}
           </h1>
           <p className="text-slate-500 text-lg mt-2 max-w-xl">
             {user 
-              ? 'Your professional workspace is ready. Access all pro utilities and manage your documents with zero latency.' 
-              : 'Fast, secure, and private PDF manipulation online. 20+ utilities optimized for academic and business use.'
+              ? 'Your student project workspace is ready. Access all pro tools for free.' 
+              : 'The only PDF toolkit built for student privacy. No uploads, no storage, just instant local processing.'
             }
           </p>
         </div>
@@ -214,3 +214,4 @@ function QuickStat({ icon: Icon, label, value, color }: any) {
     </div>
   );
 }
+
