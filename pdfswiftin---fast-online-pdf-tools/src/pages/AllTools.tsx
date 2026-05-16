@@ -9,19 +9,19 @@ export default function AllTools() {
   return (
     <div className="max-w-6xl mx-auto pb-20">
       <SEO 
-        title="All PDF Tools - PDFSwiftin Online PDF Suite" 
-        description="Explore our full range of 20+ free online PDF tools. Merge, split, protect, and convert PDFs with PDFSwiftin's fast browser-side processing."
-        keywords="all pdf tools, free online pdf tools, merge pdf, split pdf, protect pdf, image to pdf, compress pdf, pdf to word"
+        title="All PDF Tools | Best PDF Tool Free for Students and All" 
+        description="Access the most comprehensive suite of free tools for students or suso. PDFSwift provides 20+ PDF tool free for students and all for secure, private document editing."
+        keywords="pdf tool free for students and all, free tools for students, suso pdf tools, all pdf tools free, private pdf editor online"
       />
 
       <div className="mb-12 text-center sm:text-left">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
             <h1 className="text-3xl font-black text-slate-900 tracking-tight flex items-center gap-3">
-              <Grid className="text-indigo-600" size={28} /> All PDF Tools
+              <Grid className="text-indigo-600" size={28} /> All PDF Tools - Free for Students and All
             </h1>
             <p className="text-slate-500 text-sm mt-2 max-w-2xl">
-              Everything you need to manage your PDF documents efficiently. All tools run locally in your browser for maximum privacy.
+              Get access to the ultimate <strong>pdf tool free for students and all</strong>. Every operation is handled locally, making it the top choice of <strong>free tools for students</strong> or suso globally.
             </p>
           </div>
           <div className="flex items-center gap-2 px-4 py-2 bg-slate-900 text-white rounded-xl text-xs font-bold self-start">
