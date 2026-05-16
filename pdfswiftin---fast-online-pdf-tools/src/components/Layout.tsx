@@ -21,8 +21,11 @@ export default function Layout() {
       <header className="h-16 bg-white border-b border-slate-200 flex items-center justify-between px-6 shrink-0 z-50">
         <div className="flex items-center gap-8">
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white transition-transform group-hover:scale-110 shadow-sm shadow-indigo-200">
-              <FileCheck size={18} aria-hidden="true" />
+            <div className="relative w-9 h-9 flex items-center justify-center transition-transform group-hover:scale-105">
+              <div className="absolute inset-0 bg-indigo-600 rounded-xl rotate-3 group-hover:rotate-6 transition-transform shadow-md opacity-20"></div>
+              <div className="absolute inset-0 bg-indigo-600 rounded-lg flex items-center justify-center text-white z-10 shadow-sm shadow-indigo-200">
+                <FileCheck size={20} aria-hidden="true" />
+              </div>
             </div>
             <div className="flex flex-col -gap-1">
               <span className="text-xl font-black text-slate-900 tracking-tighter">PDFSwift <span className="text-indigo-600">| Student Suite</span></span>
