@@ -5,15 +5,15 @@ export default function About() {
   return (
     <div className="max-w-4xl mx-auto pb-20">
       <SEO 
-        title="About PDFSwiftin - The Future of PDF Manipulation" 
-        description="Learn why PDFSwiftin is the fastest and most private PDF tool suite on the web. Built with modern web standards and a privacy-first approach."
+        title="About PDFSwift - The Future of Free PDF Editing" 
+        description="Learn why PDFSwift is the fastest and most private free online PDF tool editor on the web. Built for students and pros."
       />
       
       <div className="mb-16">
         <h1 className="text-4xl font-black text-slate-900 tracking-tight mb-4">The PDF Utility Suit Built for Speed.</h1>
         <p className="text-slate-500 text-lg max-w-2xl leading-relaxed">
-          PDFSwiftin was born from a simple observation: most "fast" PDF tools aren't actually fast when you consider the upload time. 
-          We built a suite that runs where it matters—in your browser.
+          PDFSwift was born from a simple observation: most "fast" PDF tools aren't actually fast when you consider the upload time. 
+          We built a free online suite that runs where it matters—in your browser.
         </p>
       </div>
 
@@ -38,7 +38,7 @@ export default function About() {
             <div>
               <h3 className="text-lg font-bold text-slate-800 mb-2">Swift Engine</h3>
               <p className="text-sm text-slate-500 leading-relaxed">
-                Using modern WebAssembly and optimized JavaScript, PDFSwiftin manipulates complex PDFs at hardware speeds.
+                Using modern WebAssembly and optimized JavaScript, PDFSwift manipulates complex PDFs at hardware speeds.
               </p>
             </div>
           </div>
@@ -72,10 +72,10 @@ export default function About() {
       </div>
 
       <div className="p-12 bg-slate-900 text-white rounded-3xl">
-        <h2 className="text-3xl font-bold mb-6 tracking-tight">Technical SEO Roadmap</h2>
+        <h2 className="text-3xl font-bold mb-6 tracking-tight">Free PDF Editor Roadmap</h2>
         <p className="text-slate-400 mb-8 max-w-2xl text-sm leading-relaxed">
-          PDFSwiftin focuses on <strong>low-competition PDF keywords</strong>. While giants fight for "PDF Editor," we dominate the niche 
-          utilities where speed and privacy matter most.
+          PDFSwift focuses on <strong>long-tail PDF keywords</strong>. While giants fight for generic terms, we dominate the niche 
+          utilities where student-friendly pricing (Free) and privacy matter most.
         </p>
         
         <div className="flex flex-wrap gap-4 pt-6 border-t border-white/10">
