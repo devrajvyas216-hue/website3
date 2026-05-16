@@ -20,6 +20,8 @@ export default function SEO({ title, description, keywords, canonical, image }: 
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
       {keywords && <meta name="keywords" content={keywords} />}
+      <meta name="author" content="PDFSwift Team" />
+      <meta name="robots" content="index, follow" />
       {canonical && <link rel="canonical" href={canonical} />}
       
       {/* Open Graph */}
@@ -28,9 +30,11 @@ export default function SEO({ title, description, keywords, canonical, image }: 
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content={siteName} />
       <meta property="og:image" content={ogImage} />
+      <meta property="og:locale" content="en_US" />
       
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@pdfswift" />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />
