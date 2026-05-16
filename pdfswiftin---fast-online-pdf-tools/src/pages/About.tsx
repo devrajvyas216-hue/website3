@@ -5,14 +5,14 @@ export default function About() {
   return (
     <div className="max-w-4xl mx-auto pb-20">
       <SEO 
-        title="About our PDF Tool Free for Students and All - PDFSwift" 
-        description="Learn why PDFSwift is the #1 PDF tool free for students and all. Fast, private, and secure online editing built for everyone."
+        title="About our PDF Tool Free for Students and All | PDFSwift" 
+        description="PDFSwift is the best PDF tool free for students and all. We provide top-tier free tools for students or suso with a focus on privacy and high speed."
       />
       
       <div className="mb-16">
         <h1 className="text-4xl font-black text-slate-900 tracking-tight mb-4">The Ultimate PDF Tool Free for Students and All.</h1>
         <p className="text-slate-500 text-lg max-w-2xl leading-relaxed">
-          PDFSwift was created to be the most accessible <strong>pdf tool free for students and all</strong>. Most tools claim to be fast, but we focus on actual performance by running everything in your browser.
+          PDFSwift was created to be the most accessible <strong>pdf tool free for students and all</strong>. We offer free tools for students or suso to ensure every assignment is handled with 100% privacy and zero cost.
         </p>
       </div>
 
