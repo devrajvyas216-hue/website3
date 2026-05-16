@@ -21,20 +21,20 @@ export default function Home() {
   return (
     <>
       <SEO 
-        title="PDFSwift - Free Student PDF Editor & Tools | Private Suite" 
-        description="The safest free online PDF editor for students. Merge, Split, and Convert assignments securely without uploading files to any server."
-        keywords="student pdf editor, homework pdf tools, private pdf merger, free assignment editor, secure pdf tools no upload"
+        title="PDF Tool Free for Students and All - PDFSwift Private Suite" 
+        description="The ultimate PDF tool free for students and all. Merge, Split, and Convert assignments securely without uploading files. 100% private processing."
+        keywords="pdf tool free for students and all, student pdf editor, free pdf tools online, private pdf suite, assignment pdf editor"
       />
       
       <div className="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-4">
         <div>
           <h1 className="text-4xl font-black text-slate-900 tracking-tighter sm:text-5xl">
-            {user ? `Welcome back, ${user.displayName?.split(' ')[0]}!` : 'Fast & Private Student PDF Tools.'}
+            {user ? `Welcome back, ${user.displayName?.split(' ')[0]}!` : 'PDF Tool Free for Students and All.'}
           </h1>
           <p className="text-slate-500 text-lg mt-2 max-w-xl">
             {user 
-              ? 'Your student project workspace is ready. Access all pro tools for free.' 
-              : 'The only PDF toolkit built for student privacy. No uploads, no storage, just instant local processing.'
+              ? 'Your student project workspace is ready. Access the best PDF tool free for students and all.' 
+              : 'The only comprehensive PDF tool free for students and all. No uploads, no storage, just instant local processing.'
             }
           </p>
         </div>
@@ -66,11 +66,11 @@ export default function Home() {
             <ShieldCheck size={14} /> 100% SECURE & PRIVATE
           </div>
           <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight leading-tight">
-            Built for Student Privacy, <br />
-            <span className="text-indigo-600">Engineered for Trust.</span>
+            The Top PDF Tool Free for Students and All, <br />
+            <span className="text-indigo-600">Built with 100% Privacy.</span>
           </h2>
           <p className="text-slate-500 text-lg leading-relaxed">
-            In an era of data leaks, PDFSwift takes a different path. Your assignments and sensitive documents are processed <strong>entirely inside your browser</strong>. They are never uploaded to a cloud, never stored on a disk, and never seen by anyone but you.
+            In an era of data leaks, it is hard to find a <strong>PDF tool free for students and all</strong> that doesn't track you. PDFSwift takes a different path. Your assignments and sensitive documents are processed <strong>entirely inside your browser</strong>. They are never uploaded to a cloud, never stored on a disk, and never seen by anyone but you.
           </p>
           <ul className="space-y-4">
             <li className="flex items-center gap-3 text-slate-700 font-bold">
@@ -102,6 +102,21 @@ export default function Home() {
                <span className="text-[10px] font-black uppercase tracking-widest">Verified Swift</span>
             </div>
             <p className="text-[11px] text-slate-500 leading-tight">ISO-ready browser logic ensures your data stays on your machine.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* SEO Section for Rank */}
+      <section className="mb-20 bg-indigo-50/50 rounded-[2.5rem] p-12 border border-indigo-100">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl font-black text-slate-900 mb-6 underline decoration-indigo-200 underline-offset-8">Why we are the best PDF tool free for students and all.</h2>
+          <p className="text-slate-600 leading-relaxed mb-6">
+            When students look for a <strong>pdf tool free for students and all</strong>, they often find websites filled with ads and slow upload speeds. PDFSwift fixes this by providing professional-grade tools that work without registration. Our goal is to be the primary <strong>pdf tool free for students and all</strong> globally.
+          </p>
+          <div className="flex flex-wrap justify-center gap-2">
+            <span className="px-3 py-1 bg-white border border-indigo-200 rounded-full text-[10px] font-bold text-indigo-600 uppercase">#1 PDF Tool Free for Students and All</span>
+            <span className="px-3 py-1 bg-white border border-indigo-200 rounded-full text-[10px] font-bold text-indigo-600 uppercase">Private Student PDF Editor</span>
+            <span className="px-3 py-1 bg-white border border-indigo-200 rounded-full text-[10px] font-bold text-indigo-600 uppercase">Fast Browser-Side PDF Suite</span>
           </div>
         </div>
       </section>
