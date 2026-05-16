@@ -24,7 +24,10 @@ export default function Layout() {
             <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white transition-transform group-hover:scale-110 shadow-sm shadow-indigo-200">
               <FileCheck size={18} aria-hidden="true" />
             </div>
-            <span className="text-xl font-black text-slate-900 tracking-tighter">PDFSwiftin</span>
+            <div className="flex flex-col -gap-1">
+              <span className="text-xl font-black text-slate-900 tracking-tighter">PDFSwift</span>
+              <span className="text-[8px] font-black text-indigo-600 uppercase tracking-[0.2em] leading-none">Pro PDF Tools & Editor Free</span>
+            </div>
           </Link>
 
           <nav className="hidden xl:flex items-center gap-1">
@@ -195,7 +198,7 @@ export default function Layout() {
       {/* Footer */}
       <footer className="h-10 bg-white border-t border-slate-200 px-6 flex items-center justify-between shrink-0 z-50">
         <p className="text-[10px] text-slate-400 font-medium tracking-tight">
-          © {new Date().getFullYear()} PDFSwiftin. Pro-grade PDF tools at the speed of thought.
+          © {new Date().getFullYear()} PDFSwift. Free pro-grade PDF tools for students and business.
         </p>
         <div className="flex gap-6">
           <Link to="/privacy" className="text-[10px] font-bold text-slate-500 hover:text-indigo-600 uppercase tracking-widest flex items-center gap-1">
@@ -205,7 +208,7 @@ export default function Layout() {
             <Scale size={10} aria-hidden="true" /> Terms
           </Link>
           <Link to="/about" className="text-[10px] font-bold text-slate-500 hover:text-indigo-600 uppercase tracking-widest">
-            Why PDFSwiftin?
+            Why PDFSwift?
           </Link>
         </div>
       </footer>
