@@ -93,18 +93,18 @@ export default function Blog() {
   return (
     <div className="max-w-5xl mx-auto pb-20 px-4">
       <SEO 
-        title="PDF Guides & Tutorials Free Online - PDFSwift Blog" 
-        description="Discover expert tips and tutorials on how to manage, convert, and secure your PDF documents with PDFSwift Free Online Tools."
-        keywords="pdf tutorials, how to merge pdf, secure pdf guide, image to pdf conversion tips, free pdf tools"
+        title="PDF Guides & Tutorials | Best PDF Tool Free for Students and All" 
+        description="Master your assignments with the best PDF tool free for students and all. PDFSwift's blog offers free tools for students or suso to excel in document management."
+        keywords="pdf tool free for students and all, free tools for students, suso pdf tools, pdf tutorials, student guide pdf"
       />
 
       <div className="mb-16 text-center">
         <div className="inline-flex items-center gap-2 px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full text-[10px] font-black uppercase tracking-widest mb-6">
           <BookOpen size={12} /> The Swift Blog
         </div>
-        <h1 className="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight mb-6">Free PDF Mastery Tutorials.</h1>
+        <h1 className="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight mb-6">PDF Tool Free for Students and All Guides.</h1>
         <p className="text-slate-500 text-lg max-w-2xl mx-auto">
-          Pro-grade PDF guides and industry insights to help students and professionals work Smarter.
+          Explore professional <strong>free tools for students</strong> and in-depth guides on the most reliable <strong>pdf tool free for students and all</strong> online.
         </p>
 
         <div className="mt-10 max-w-xl mx-auto relative">
