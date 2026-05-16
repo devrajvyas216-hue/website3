@@ -1,6 +1,8 @@
 {
-  "name": "PDFSwiftin - Fast Online PDF Tools",
-  "description": "The fastest web-based PDF utility suite. Merge, split, compress, and protect your PDF files with PDFSwiftin. 100% private, browser-side processing.",
+  "name": "PDFSwift | PDF Tool Free for Students and All",
+  "description": "The #1 PDF tool free for students and all. PDFSwift provides secure, no-upload PDF tools like merging, splitting, and converting assignments with 100% privacy.",
   "requestFramePermissions": [],
-  "majorCapabilities": []
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
