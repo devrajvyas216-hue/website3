@@ -19,7 +19,7 @@ export const ALL_TOOLS: PDFTool[] = [
   {
     id: 'merge-pdf',
     name: 'Merge PDF Online',
-    desc: 'Combine multiple PDF files into one easily for school or work.',
+    desc: 'The best PDF tool free for students and all to combine multiple files easily.',
     icon: FilePlus,
     path: '/merge-pdf',
     accent: 'bg-indigo-100 text-indigo-600'
@@ -27,7 +27,7 @@ export const ALL_TOOLS: PDFTool[] = [
   {
     id: 'split-pdf',
     name: 'Split PDF Pages',
-    desc: 'Extract pages from your PDF or convert each page to a separate PDF free.',
+    desc: 'Extract pages with our PDF tool free for students and all instantly.',
     icon: FileMinus,
     path: '/split-pdf',
     accent: 'bg-emerald-100 text-emerald-600'
