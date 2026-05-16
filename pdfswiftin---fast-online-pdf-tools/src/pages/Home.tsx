@@ -21,9 +21,9 @@ export default function Home() {
   return (
     <>
       <SEO 
-        title="PDF Tool Free for Students and All - PDFSwift Private Suite" 
-        description="The ultimate PDF tool free for students and all. Merge, Split, and Convert assignments securely without uploading files. 100% private processing."
-        keywords="pdf tool free for students and all, student pdf editor, free pdf tools online, private pdf suite, assignment pdf editor"
+        title="PDF Tool Free for Students and All | Best Free PDF Suite 2026" 
+        description="The ultimate PDF tool free for students and all. PDFSwift provides free tools for students or suso (safe user secure options) to merge, split, and convert assignments."
+        keywords="pdf tool free for students and all, free tools for students, suso pdf tools, student pdf suite, free online pdf editor"
       />
       
       <div className="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-4">
@@ -34,7 +34,7 @@ export default function Home() {
           <p className="text-slate-500 text-lg mt-2 max-w-xl">
             {user 
               ? 'Your student project workspace is ready. Access the best PDF tool free for students and all.' 
-              : 'The only comprehensive PDF tool free for students and all. No uploads, no storage, just instant local processing.'
+              : 'Our PDF tool free for students and all provides free tools for students or suso with instant local processing and no uploads.'
             }
           </p>
         </div>
