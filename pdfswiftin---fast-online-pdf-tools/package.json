@@ -11,6 +11,7 @@
     "lint": "tsc --noEmit"
   },
   "dependencies": {
+    "node-domexception": "file:./patches/node-domexception",
     "@google/genai": "^1.29.0",
     "@tailwindcss/vite": "^4.1.14",
     "@vitejs/plugin-react": "^5.0.4",
@@ -29,7 +30,7 @@
     "vite": "^6.2.3"
   },
   "overrides": {
-    "node-domexception": "file:./patches/node-domexception"
+    "node-domexception": "$node-domexception"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
