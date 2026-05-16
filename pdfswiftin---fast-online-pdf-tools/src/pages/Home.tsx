@@ -21,20 +21,20 @@ export default function Home() {
   return (
     <>
       <SEO 
-        title="PDFSwiftin - Free Online PDF Tools | 20+ PDF Utilities" 
-        description="The fastest online PDF suite. Merge, Split, Compress, and Convert 20+ PDF formats. 100% private browser-side processing."
-        keywords="free pdf tools, merge pdf online, split pdf free, protect pdf password, online pdf utility, pdf to word, compress pdf"
+        title="PDFSwift - Free Online PDF Editor & Tools | 20+ PDF Utilities" 
+        description="The fastest free online PDF suite for students. Merge, Split, Compress, and Convert 20+ PDF formats securely in your browser."
+        keywords="free pdf editor, merge pdf online, split pdf free, protect pdf password, online pdf tools for students, pdf to word converter, compress pdf size"
       />
       
       <div className="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-4">
         <div>
           <h1 className="text-4xl font-black text-slate-900 tracking-tighter sm:text-5xl">
-            {user ? `Welcome back, ${user.displayName?.split(' ')[0]}!` : 'PDF Solutions Simplified.'}
+            {user ? `Welcome back, ${user.displayName?.split(' ')[0]}!` : 'Free Online PDF Tools for Students & Pros.'}
           </h1>
           <p className="text-slate-500 text-lg mt-2 max-w-xl">
             {user 
               ? 'Your professional workspace is ready. Access all pro utilities and manage your documents with zero latency.' 
-              : 'Professional tools for fast, secure, and private PDF manipulation. 20+ utilities at your fingertips.'
+              : 'Fast, secure, and private PDF manipulation online. 20+ utilities optimized for academic and business use.'
             }
           </p>
         </div>
@@ -158,9 +158,9 @@ export default function Home() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-20" style={{ contentVisibility: 'auto' }}>
         <div className="lg:col-span-2 space-y-12">
           <article className="prose prose-slate max-w-none">
-            <h2 className="text-3xl font-black text-slate-900 mb-8 tracking-tight underline decoration-indigo-500 decoration-8 underline-offset-[12px]">The Ultimate PDF Powerhouse.</h2>
+            <h2 className="text-3xl font-black text-slate-900 mb-8 tracking-tight underline decoration-indigo-500 decoration-8 underline-offset-[12px]">The Ultimate Free PDF Powerhouse.</h2>
             <p className="text-slate-600 text-lg leading-relaxed">
-              PDFSwiftin isn't just another online converter. We've built a high-performance engine that runs directly in your browser, bypassing the need for server-side processing which often compromises privacy and speed. 
+              PDFSwift isn't just another online converter. We've built a high-performance engine that runs directly in your browser, bypassing the need for server-side processing which often compromises privacy and speed. 
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
                <div className="bg-slate-50 p-8 rounded-2xl border border-slate-200">
