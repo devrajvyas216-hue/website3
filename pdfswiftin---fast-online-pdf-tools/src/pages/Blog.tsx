@@ -8,7 +8,7 @@ export const blogPosts = [
   {
     slug: 'how-to-merge-pdf-files',
     title: 'How to Merge PDF Files Free Online Without Quality Loss',
-    excerpt: 'Learn the quickest way to combine multiple PDF documents into one professional file using PDFSwiftin\'s local browser-side engine.',
+    excerpt: 'Learn the quickest way to combine multiple PDF documents into one professional file using PDFSwift\'s local browser-side engine.',
     date: 'May 12, 2026',
     readTime: '4 min read',
     category: 'Guides',
@@ -93,18 +93,18 @@ export default function Blog() {
   return (
     <div className="max-w-5xl mx-auto pb-20 px-4">
       <SEO 
-        title="PDF Guides & Tutorials - PDFSwiftin Blog" 
-        description="Discover expert tips and tutorials on how to manage, convert, and secure your PDF documents with PDFSwiftin."
-        keywords="pdf tutorials, how to merge pdf, secure pdf guide, image to pdf conversion tips"
+        title="PDF Guides & Tutorials Free Online - PDFSwift Blog" 
+        description="Discover expert tips and tutorials on how to manage, convert, and secure your PDF documents with PDFSwift Free Online Tools."
+        keywords="pdf tutorials, how to merge pdf, secure pdf guide, image to pdf conversion tips, free pdf tools"
       />
 
       <div className="mb-16 text-center">
         <div className="inline-flex items-center gap-2 px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full text-[10px] font-black uppercase tracking-widest mb-6">
           <BookOpen size={12} /> The Swift Blog
         </div>
-        <h1 className="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight mb-6">PDF Mastery Guides.</h1>
+        <h1 className="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight mb-6">Free PDF Mastery Tutorials.</h1>
         <p className="text-slate-500 text-lg max-w-2xl mx-auto">
-          In-depth tutorials and industry insights to help you work smarter with your documents.
+          Pro-grade PDF guides and industry insights to help students and professionals work Smarter.
         </p>
 
         <div className="mt-10 max-w-xl mx-auto relative">
