@@ -58,6 +58,54 @@ export default function Home() {
         <QuickStat icon={Lock} label="Security" value="AES-256" color="text-blue-600" />
       </div>
 
+      {/* Trust & Security Section */}
+      <section className="mb-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-white border border-slate-200 rounded-[2.5rem] p-8 md:p-12 shadow-sm overflow-hidden relative">
+        <div className="absolute -top-24 -left-24 w-64 h-64 bg-indigo-50 rounded-full blur-[80px] opacity-60"></div>
+        <div className="relative z-10 space-y-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-50 text-indigo-700 rounded-full text-xs font-black uppercase tracking-widest">
+            <ShieldCheck size={14} /> 100% SECURE & PRIVATE
+          </div>
+          <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight leading-tight">
+            Built for Student Privacy, <br />
+            <span className="text-indigo-600">Engineered for Trust.</span>
+          </h2>
+          <p className="text-slate-500 text-lg leading-relaxed">
+            In an era of data leaks, PDFSwift takes a different path. Your assignments and sensitive documents are processed <strong>entirely inside your browser</strong>. They are never uploaded to a cloud, never stored on a disk, and never seen by anyone but you.
+          </p>
+          <ul className="space-y-4">
+            <li className="flex items-center gap-3 text-slate-700 font-bold">
+              <div className="w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-[10px]">✓</div>
+              No Registration Required for Basic Tools
+            </li>
+            <li className="flex items-center gap-3 text-slate-700 font-bold">
+              <div className="w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-[10px]">✓</div>
+              Military-Grade Local Encryption
+            </li>
+            <li className="flex items-center gap-3 text-slate-700 font-bold">
+              <div className="w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-[10px]">✓</div>
+              Open Source Processing Logic
+            </li>
+          </ul>
+        </div>
+        <div className="relative group">
+          <div className="absolute -inset-4 bg-indigo-600/5 rounded-[2rem] blur-2xl group-hover:bg-indigo-600/10 transition-all"></div>
+          <img 
+            src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+            alt="Professional secure digital workspace" 
+            className="relative rounded-3xl shadow-2xl border-8 border-white transform hover:scale-[1.02] transition-transform duration-500 w-full object-cover aspect-[4/3]"
+            referrerPolicy="no-referrer"
+            loading="lazy"
+          />
+          <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-slate-100 max-w-[200px] hidden md:block">
+            <div className="flex items-center gap-2 mb-2 text-indigo-600">
+               <FileCheck size={18} />
+               <span className="text-[10px] font-black uppercase tracking-widest">Verified Swift</span>
+            </div>
+            <p className="text-[11px] text-slate-500 leading-tight">ISO-ready browser logic ensures your data stays on your machine.</p>
+          </div>
+        </div>
+      </section>
+
       {/* Tools Section */}
       <div className="flex items-center justify-between mb-8">
         <h2 className="text-2xl font-black text-slate-900 tracking-tight flex items-center gap-2"> 
@@ -214,4 +262,3 @@ function QuickStat({ icon: Icon, label, value, color }: any) {
     </div>
   );
 }
-
