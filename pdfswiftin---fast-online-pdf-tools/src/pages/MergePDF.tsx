@@ -47,9 +47,9 @@ export default function MergePDF() {
   return (
     <div className="max-w-4xl mx-auto">
       <SEO 
-        title="Merge PDF Files - Best PDF Tool Free for Students and All" 
-        description="The easiest way to merge PDF files with our PDF tool free for students and all. Secure, fast, and 100% private browser processing."
-        keywords="pdf tool free for students and all, merge pdf student, combine pdf online free, join pdf files"
+        title="Merge PDF Online - Best PDF Tool Free for Students and All" 
+        description="The easiest way to merge PDF files with our PDF tool free for students and all. Reliable free tools for students for combining assignments securely."
+        keywords="pdf tool free for students and all, free tools for students, merge pdf student, combine pdf online free"
       />
 
       <div className="mb-8">
