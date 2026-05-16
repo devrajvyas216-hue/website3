@@ -47,14 +47,14 @@ export default function MergePDF() {
   return (
     <div className="max-w-4xl mx-auto">
       <SEO 
-        title="Merge PDF Online - Combine PDF Files Free" 
-        description="Combine multiple PDF documents into one easily with PDFSwift. No file size limits, browser-side processing, and 100% private for students."
-        keywords="merge pdf student, combine pdf online free, online pdf merger, join pdf files without upload"
+        title="Merge PDF Files - Best PDF Tool Free for Students and All" 
+        description="The easiest way to merge PDF files with our PDF tool free for students and all. Secure, fast, and 100% private browser processing."
+        keywords="pdf tool free for students and all, merge pdf student, combine pdf online free, join pdf files"
       />
 
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-slate-900">Merge PDF Files Online for Students</h1>
-        <p className="text-slate-500 text-sm mt-1">Combine multiple documents into one single PDF instantly for free.</p>
+        <h1 className="text-3xl font-bold text-slate-900">Merge PDF Files - PDF Tool Free for Students and All</h1>
+        <p className="text-slate-500 text-sm mt-1">Combine multiple documents into one single PDF instantly using the ultimate PDF tool free for students and all.</p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -152,15 +152,15 @@ export default function MergePDF() {
       </div>
 
       <section className="mt-20 prose prose-slate max-w-none pb-20">
-        <h2>How to Merge PDF Files Free Online</h2>
+        <h2>Why use our PDF tool free for students and all for merging?</h2>
         <p>
-          Merging your PDF documents shouldn't be complicated. With <strong>PDFSwift</strong>, we've optimized the <em>merge pdf free online</em> 
+          Merging your PDF documents shouldn't be complicated. With <strong>PDFSwift</strong>, we've optimized the <em>pdf tool free for students and all</em> 
           workflow to ensure you can combine multiple invoices, reports, or chapters into a single file without any security worries.
         </p>
-        <h3>Safe and Private Merging for Students</h3>
+        <h3>The Perfect PDF Tool Free for Students and All</h3>
         <p>
-          Unlike other services, our tool performs the "low-level" heavy lifting inside your web browser using <strong>pdf-lib</strong>. 
-          This means your confidential business or student files are never uploaded to our servers, making PDFSwift the preferred choice for privacy-conscious users.
+          Unlike other services, our <strong>pdf tool free for students and all</strong> performs the "low-level" heavy lifting inside your web browser using <strong>pdf-lib</strong>. 
+          This means your confidential business or student files are never uploaded to our servers, making PDFSwift the best <strong>pdf tool free for students and all</strong> for privacy-conscious users.
         </p>
       </section>
     </div>
