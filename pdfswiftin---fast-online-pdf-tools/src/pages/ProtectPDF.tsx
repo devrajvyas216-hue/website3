@@ -38,16 +38,16 @@ export default function ProtectPDF() {
   return (
     <div className="max-w-4xl mx-auto">
       <SEO 
-        title="Protect PDF Online - Add Password to PDF Free for Students" 
-        description="Secure your PDF files with military-grade encryption. PDFSwift allows you to password protect PDF online without server uploads for free."
-        keywords="protect pdf student, password protect pdf online free, secure pdf without upload, encrypt pdf online free"
+        title="Protect PDF Password - Best PDF Tool Free for Students and All" 
+        description="The ultimate PDF tool free for students and all to add passwords to PDF. Secure your homework and assignments using our top-rated free tools for students."
+        keywords="pdf tool free for students and all, free tools for students, suso pdf tools, protect pdf password, secure pdf student"
       />
 
       <div className="mb-12">
         <h1 className="text-3xl font-bold text-slate-900 tracking-tight flex items-center gap-3">
-          Protect PDF Securely with Password <ShieldCheck className="text-indigo-600" size={24} />
+          Protect PDF Online - Best Free Tools for Students <ShieldCheck className="text-indigo-600" size={24} />
         </h1>
-        <p className="text-slate-500 text-sm mt-1">Encrypt your confidential documents with a secure password online for free.</p>
+        <p className="text-slate-500 text-sm mt-1">Encrypt your confidential documents with the #1 <strong>pdf tool free for students and all</strong> online.</p>
       </div>
 
       <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm mb-12">
