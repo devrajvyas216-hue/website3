@@ -47,14 +47,14 @@ export default function MergePDF() {
   return (
     <div className="max-w-4xl mx-auto">
       <SEO 
-        title="Merge PDF Online - Combine PDF Files for Free" 
-        description="Combine multiple PDF documents into one easily with PDFSwiftin. No file size limits, browser-side processing, and 100% private."
-        keywords="merge pdf, combine pdf, online pdf merger, join pdf files"
+        title="Merge PDF Online - Combine PDF Files Free" 
+        description="Combine multiple PDF documents into one easily with PDFSwift. No file size limits, browser-side processing, and 100% private for students."
+        keywords="merge pdf student, combine pdf online free, online pdf merger, join pdf files without upload"
       />
 
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-slate-900">Merge PDF Files</h1>
-        <p className="text-slate-500 text-sm mt-1">Combine multiple documents into one single PDF instantly.</p>
+        <h1 className="text-3xl font-bold text-slate-900">Merge PDF Files Online for Students</h1>
+        <p className="text-slate-500 text-sm mt-1">Combine multiple documents into one single PDF instantly for free.</p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -154,13 +154,13 @@ export default function MergePDF() {
       <section className="mt-20 prose prose-slate max-w-none pb-20">
         <h2>How to Merge PDF Files Free Online</h2>
         <p>
-          Merging your PDF documents shouldn't be complicated. With <strong>PDFSwiftin</strong>, we've optimized the <em>merge pdf free online</em> 
+          Merging your PDF documents shouldn't be complicated. With <strong>PDFSwift</strong>, we've optimized the <em>merge pdf free online</em> 
           workflow to ensure you can combine multiple invoices, reports, or chapters into a single file without any security worries.
         </p>
-        <h3>Safe and Private Merging</h3>
+        <h3>Safe and Private Merging for Students</h3>
         <p>
           Unlike other services, our tool performs the "low-level" heavy lifting inside your web browser using <strong>pdf-lib</strong>. 
-          This means your confidential files are never uploaded to our servers, making PDFSwiftin the preferred choice for privacy-conscious professionals.
+          This means your confidential business or student files are never uploaded to our servers, making PDFSwift the preferred choice for privacy-conscious users.
         </p>
       </section>
     </div>
