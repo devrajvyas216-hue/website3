@@ -55,14 +55,14 @@ export default function SplitPDF() {
   return (
     <div className="max-w-4xl mx-auto">
       <SEO 
-        title="Split PDF Online - Extract Pages from PDF for Free" 
-        description="Easily separate pages from your PDF document with PDFSwiftin. Extract single pages or custom ranges with our free online tool."
-        keywords="split pdf, extract pages from pdf, separate pdf pages, online pdf splitter"
+        title="Split PDF Online - Extract Pages from PDF Free" 
+        description="Easily separate pages from your PDF document with PDFSwift. Extract single pages or custom ranges with our free online tool for students."
+        keywords="split pdf student, extract pages from pdf online, separate pdf pages free, online pdf splitter without upload"
       />
 
       <div className="mb-12">
-        <h1 className="text-3xl font-bold text-slate-900">Split PDF Document</h1>
-        <p className="text-slate-500 text-sm mt-1">Extract individual pages or create new documents from page ranges.</p>
+        <h1 className="text-3xl font-bold text-slate-900">Split PDF Pages Online Free</h1>
+        <p className="text-slate-500 text-sm mt-1">Extract individual pages or create new documents from page ranges easily.</p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
@@ -150,11 +150,11 @@ export default function SplitPDF() {
       </div>
 
       <section className="prose prose-slate max-w-none pb-20">
-        <h2>Reliable Online PDF Splitter</h2>
+        <h2>Reliable Online PDF Splitter Free</h2>
         <p>
-          Need to send just one page from a massive report? Our <strong>PDFSwiftin Splitter</strong> makes it easy to 
-          <em>separate pdf pages</em> without downloading heavy software. By using browser-side processing, we offer 
-          the fastest extraction speed on the market.
+          Need to send just one page from a massive report? Our <strong>PDFSwift Splitter</strong> makes it easy to 
+          <em>separate pdf pages free</em> without downloading heavy software. By using browser-side processing, we offer 
+          the fastest extraction speed for students and pros.
         </p>
       </section>
     </div>
