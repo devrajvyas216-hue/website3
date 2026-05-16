@@ -5,15 +5,14 @@ export default function About() {
   return (
     <div className="max-w-4xl mx-auto pb-20">
       <SEO 
-        title="About PDFSwift - The Future of Free PDF Editing" 
-        description="Learn why PDFSwift is the fastest and most private free online PDF tool editor on the web. Built for students and pros."
+        title="About our PDF Tool Free for Students and All - PDFSwift" 
+        description="Learn why PDFSwift is the #1 PDF tool free for students and all. Fast, private, and secure online editing built for everyone."
       />
       
       <div className="mb-16">
-        <h1 className="text-4xl font-black text-slate-900 tracking-tight mb-4">The PDF Utility Suit Built for Speed.</h1>
+        <h1 className="text-4xl font-black text-slate-900 tracking-tight mb-4">The Ultimate PDF Tool Free for Students and All.</h1>
         <p className="text-slate-500 text-lg max-w-2xl leading-relaxed">
-          PDFSwift was born from a simple observation: most "fast" PDF tools aren't actually fast when you consider the upload time. 
-          We built a free online suite that runs where it matters—in your browser.
+          PDFSwift was created to be the most accessible <strong>pdf tool free for students and all</strong>. Most tools claim to be fast, but we focus on actual performance by running everything in your browser.
         </p>
       </div>
 
