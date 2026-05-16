@@ -55,9 +55,9 @@ export default function ImageToPDF() {
   return (
     <div className="max-w-4xl mx-auto">
       <SEO 
-        title="Convert Photos to PDF Online Free - JPG & PNG to PDF" 
-        description="Convert your pictures and photos into PDF documents in seconds with PDFSwift. Fast, free, and secure online image to PDF converter for students."
-        keywords="jpg to pdf student, png to pdf free, image to pdf online free, convert photo to pdf without upload"
+        title="Convert Photo to PDF Online Free - Best PDF Tool Free for Students and All" 
+        description="The safest PDF tool free for students and all to convert JPG and PNG pictures to PDF. Instant, higher quality, and 100% private processing for student assignments."
+        keywords="pdf tool free for students and all, free tools for students, photo to pdf student, jpg to pdf converter"
       />
 
       <div className="mb-8 text-center sm:text-left">
