@@ -70,7 +70,18 @@ export default function About() {
           </div>
         </div>
       </div>
-
+      
+      {/* About Image Section */}
+      <div className="mb-20 rounded-[2.5rem] overflow-hidden border border-slate-200 shadow-xl">
+        <img 
+          src="https://images.unsplash.com/photo-1454165833767-1330084bc6f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+          alt="Professional productivity workspace" 
+          className="w-full h-[400px] object-cover"
+          referrerPolicy="no-referrer"
+          loading="lazy"
+        />
+      </div>
+      
       <div className="p-12 bg-slate-900 text-white rounded-3xl">
         <h2 className="text-3xl font-bold mb-6 tracking-tight">Free PDF Editor Roadmap</h2>
         <p className="text-slate-400 mb-8 max-w-2xl text-sm leading-relaxed">
