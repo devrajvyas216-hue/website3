@@ -30,7 +30,7 @@ export default function BlogPost() {
   return (
     <div className="max-w-3xl mx-auto pb-20 px-4">
       <SEO 
-        title={`${post.title.replace(/\*\*/g, '')} - PDFSwiftin Blog`} 
+        title={`${post.title.replace(/\*\*/g, '')} | PDFswift Blog`} 
         description={post.excerpt.replace(/\*\*/g, '')}
       />
 
@@ -79,9 +79,9 @@ export default function BlogPost() {
           your files to a remote server, which can be a significant risk for confidential business data.
         </p>
 
-        <h3>Why PDFSwiftin is Different</h3>
+        <h3>Why PDFswift is Different</h3>
         <p>
-          Unlike traditional platforms, PDFSwiftin processes everything right in your browser. This <em>how-to</em> guide specifically
+          Unlike traditional platforms, PDFswift processes everything right in your browser. This <em>how-to</em> guide specifically
           explores the technical benefits of browser-side encryption and manipulation.
         </p>
 
@@ -114,7 +114,7 @@ export default function BlogPost() {
       <footer className="mt-20 pt-10 border-t border-slate-100">
         <h4 className="text-sm font-bold text-slate-900 mb-6 uppercase tracking-widest">About the Author</h4>
         <p className="text-xs text-slate-500 leading-relaxed max-w-xl">
-          The PDFSwiftin Editorial team is composed of document security specialists and software engineers dedicated to making the web a safer place for file management.
+          The PDFswift Editorial team is composed of document security specialists and software engineers dedicated to making the web a safer place for file management.
         </p>
       </footer>
     </div>
