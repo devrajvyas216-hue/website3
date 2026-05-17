@@ -10,7 +10,7 @@ interface SEOProps {
 }
 
 export default function SEO({ title, description, keywords, canonical, image }: SEOProps) {
-  const siteName = "PDFSwift";
+  const siteName = "PDFswift";
   const fullTitle = `${title} | ${siteName}`;
   const defaultImage = "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=630&q=80";
   const ogImage = image || defaultImage;
@@ -20,7 +20,7 @@ export default function SEO({ title, description, keywords, canonical, image }: 
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
       {keywords && <meta name="keywords" content={keywords} />}
-      <meta name="author" content="PDFSwift Team" />
+      <meta name="author" content="PDFswift Team" />
       <meta name="robots" content="index, follow" />
       {canonical && <link rel="canonical" href={canonical} />}
       
