@@ -154,24 +154,51 @@ export default function MergePDF() {
       </div>
 
       <section className="mt-20 prose prose-slate max-w-none pb-20 border-t border-orange-50 pt-16">
-        <h2 className="text-3xl font-black text-slate-900 tracking-tight">The Ultimate Free PDF Merger Online</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-8">
-          <div>
-            <p className="text-slate-600 leading-relaxed">
-              When you search for a way to <strong>merge PDF files free online</strong>, you often encounter sites with heavy ads and slow processing. PDFswift is different. We've built the fastest <strong>PDF merger</strong> on the market using browser-native code. This means you can <strong>combine PDF documents</strong> instantly without waiting for files to upload or convert. Whether you're a student <strong>joining research papers</strong> or a property manager <strong>merging leases into one PDF</strong>, our tool handles it with ease.
-            </p>
-            <p className="text-slate-600 leading-relaxed mt-4">
-              Our <strong>online PDF joiner</strong> is a completely <strong>free PDF tool for students</strong>. We understand that academic life requires a lot of document organization—merging homework, combining lecture notes, and organizing digital books. That's why we don't limit the number of files you can process. It is the most reliable <strong>no registration PDF merge</strong> tool available for current-gen web browsers.
-            </p>
+        <h2 className="text-3xl font-black text-slate-900 tracking-tight">The Ultimate Fast and Free PDF Merger Online</h2>
+        <div className="space-y-12 mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div>
+              <p className="text-slate-600 leading-relaxed text-lg">
+                When you search for a way to <strong>merge PDF files free online</strong>, you often encounter sites with heavy ads and slow processing. PDFswift is different. We've built the fastest <strong>PDF joiner</strong> on the market using browser-native code. This means you can <strong>combine PDF documents</strong> instantly without waiting for files to upload or convert. Whether you're a student <strong>joining research papers</strong> or a property manager <strong>merging leases into one PDF</strong>, our tool handles it with ease.
+              </p>
+              <p className="text-slate-600 leading-relaxed mt-4">
+                Our <strong>online PDF joiner</strong> is a completely <strong>free PDF tool for students</strong>. We understand that academic life requires a lot of document organization—merging homework, combining lecture notes, and organizing digital books. That's why we don't limit the number of files you can process. It is the most reliable <strong>no registration PDF merge</strong> tool available for current-gen web browsers.
+              </p>
+            </div>
+            <div className="bg-orange-50/50 p-8 rounded-[2.5rem] border border-orange-100 italic">
+              <h3 className="text-xl font-bold text-slate-800 mb-4">Why Privacy-First Merging is Vital</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Standard <strong>PDF converters</strong> upload your sensitive data to remote servers. This poses a massive security risk for files like tax returns, bank statements, and legal contracts. PDFswift solves this by being a <strong>local PDF merger</strong>. Browsers today are powerful enough to handle these operations locally, and we take full advantage of that to keep your <strong>documents totally private</strong>.
+              </p>
+              <p className="text-slate-600 leading-relaxed font-semibold text-orange-600 mt-4">
+                Key Features: Unlimited merges, no file size limits, 100% browser-side, no watermark, and absolutely free forever.
+              </p>
+            </div>
           </div>
-          <div className="space-y-6">
-            <h3 className="text-xl font-bold text-slate-800">Why Privacy-First Merging is Vital</h3>
-            <p className="text-slate-600 leading-relaxed">
-              Standard <strong>PDF converters</strong> upload your sensitive data to remote servers. This poses a massive security risk for files like tax returns, bank statements, and legal contracts. PDFswift solves this by being a <strong>local PDF merger</strong>. Browsers today are powerful enough to handle these operations locally, and we take full advantage of that to keep your <strong>documents totally private</strong>.
-            </p>
-            <p className="text-slate-600 leading-relaxed font-semibold text-orange-600">
-              Key Features: Unlimited merges, no file size limits, 100% browser-side, no watermark, and absolutely free forever.
-            </p>
+
+          <div>
+             <h3 className="text-2xl font-black text-slate-900 mb-6">Mastering Document Management with PDFswift</h3>
+             <p className="text-slate-600 leading-relaxed">
+               Managing a <strong>digital PDF library</strong> requires tools that are both flexible and powerful. Our <strong>PDF merging tool</strong> allows you to reorder files with a simple drag-and-drop interface before you hit the final merge button. This ensures that your chapters, appendices, and cover pages are in the perfect sequence. If you're building a <strong>digital portfolio</strong>, you can use our tool to <strong>combine high-resolution images</strong> (converted to PDF) with your resume and cover letter in one single pass.
+             </p>
+             <p className="text-slate-600 leading-relaxed mt-4">
+               Many users wonder, "Is it safe to <strong>merge bank statements online</strong>?" With PDFswift, the answer is a resounding YES. Since we use <strong>pdf-lib</strong> and custom WASM logic, the actual binary data of your sensitive documents is processed within your computer's RAM and never sent over the network. This <strong>zero-trust architecture</strong> is what makes us the best <strong>professional PDF merger</strong> for legal and financial professionals.
+             </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-10 border-t border-slate-100">
+             <div className="p-6 bg-white border border-slate-200 rounded-2xl shadow-sm">
+                <h4 className="font-black text-orange-600 uppercase tracking-widest text-[10px] mb-2">High Efficiency</h4>
+                <p className="text-xs text-slate-500">Optimized for <strong>M1/M2 Macs</strong> and modern multi-core processors. Merge hundreds of pages in milliseconds.</p>
+             </div>
+             <div className="p-6 bg-white border border-slate-200 rounded-2xl shadow-sm">
+                <h4 className="font-black text-orange-600 uppercase tracking-widest text-[10px] mb-2">Zero Watermark</h4>
+                <p className="text-xs text-slate-500">We never put "Created by PDFswift" on your files. Your documents remain clean, professional, and entirely yours.</p>
+             </div>
+             <div className="p-6 bg-white border border-slate-200 rounded-2xl shadow-sm">
+                <h4 className="font-black text-orange-600 uppercase tracking-widest text-[10px] mb-2">Universal Access</h4>
+                <p className="text-xs text-slate-500">No software to install. <strong>Merge PDF on iPhone</strong>, iPad, Chromebook, or Linux with the same desktop-class speed.</p>
+             </div>
           </div>
         </div>
       </section>
