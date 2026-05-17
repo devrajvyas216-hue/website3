@@ -9,19 +9,19 @@ export default function AllTools() {
   return (
     <div className="max-w-6xl mx-auto pb-20">
       <SEO 
-        title="All PDF Tools | Best PDF Tool Free for Students and All" 
-        description="Access the most comprehensive suite of free tools for students or suso. PDFSwift provides 20+ PDF tool free for students and all for secure, private document editing."
-        keywords="pdf tool free for students and all, free tools for students, suso pdf tools, all pdf tools free, private pdf editor online"
+        title="All Free PDF Tools Online – PDFswift" 
+        description="Access the most comprehensive suite of free PDF tools. PDFswift provides 20+ tools for merging, splitting, and converting documents with total security and ease."
+        keywords="free pdf tools, merge pdf, split pdf, convert pdf, pdfswift tools"
       />
 
       <div className="mb-12 text-center sm:text-left">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
             <h1 className="text-3xl font-black text-slate-900 tracking-tight flex items-center gap-3">
-              <Grid className="text-indigo-600" size={28} /> All PDF Tools - Free for Students and All
+              <Grid className="text-indigo-600" size={28} /> All PDF Tools – Solutions for All Problems
             </h1>
             <p className="text-slate-500 text-sm mt-2 max-w-2xl">
-              Get access to the ultimate <strong>pdf tool free for students and all</strong>. Every operation is handled locally, making it the top choice of <strong>free tools for students</strong> or suso globally.
+              Get access to the ultimate <strong>PDFswift</strong> suite. Every operation is handled locally, making it the top choice for secure document management globally.
             </p>
           </div>
           <div className="flex items-center gap-2 px-4 py-2 bg-slate-900 text-white rounded-xl text-xs font-bold self-start">
@@ -69,7 +69,7 @@ export default function AllTools() {
         </div>
         <h3 className="text-xl font-bold mb-4">Enterprise Grade Document Management</h3>
         <p className="text-indigo-200 text-sm max-w-2xl mx-auto mb-8">
-          Join 50k+ users who trust PDFSwiftin for their daily document workflows. Secure, fast, and 100% browser-side.
+          Join 50k+ users who trust PDFswift for their daily document workflows. Secure, fast, and 100% browser-side.
         </p>
         <Link to="/about" className="inline-flex items-center gap-2 px-6 py-3 bg-white text-indigo-900 rounded-xl font-black text-xs uppercase tracking-widest hover:bg-slate-50 transition-colors shadow-lg">
           Meet the Team
