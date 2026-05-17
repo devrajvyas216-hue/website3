@@ -8,7 +8,7 @@ export const blogPosts = [
   {
     slug: 'how-to-merge-pdf-files',
     title: 'How to Merge PDF Files Free Online Without Quality Loss',
-    excerpt: 'Learn the quickest way to combine multiple PDF documents into one professional file using PDFSwift\'s local browser-side engine.',
+    excerpt: 'Learn the quickest way to combine multiple PDF documents into one professional file using PDFswift\'s local browser-side engine.',
     date: 'May 12, 2026',
     readTime: '4 min read',
     category: 'Guides',
@@ -93,18 +93,18 @@ export default function Blog() {
   return (
     <div className="max-w-5xl mx-auto pb-20 px-4">
       <SEO 
-        title="PDF Guides & Tutorials | Best PDF Tool Free for Students and All" 
-        description="Master your assignments with the best PDF tool free for students and all. PDFSwift's blog offers free tools for students or suso to excel in document management."
-        keywords="pdf tool free for students and all, free tools for students, suso pdf tools, pdf tutorials, student guide pdf"
+        title="PDF Guides & Tutorials" 
+        description="Master your documents with the best PDF tools and tutorials. PDFswift's blog offers free guides to excel in document management."
+        keywords="pdf guides, pdf tutorials, document management, pdfswift blog"
       />
 
       <div className="mb-16 text-center">
         <div className="inline-flex items-center gap-2 px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full text-[10px] font-black uppercase tracking-widest mb-6">
-          <BookOpen size={12} /> The Swift Blog
+          <BookOpen size={12} /> The PDFswift Blog
         </div>
-        <h1 className="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight mb-6">PDF Tool Free for Students and All Guides.</h1>
+        <h1 className="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight mb-6">PDF Solutions & Guides.</h1>
         <p className="text-slate-500 text-lg max-w-2xl mx-auto">
-          Explore professional <strong>free tools for students</strong> and in-depth guides on the most reliable <strong>pdf tool free for students and all</strong> online.
+          Explore professional guides and tutorials on the most reliable <strong>PDFswift</strong> tools online.
         </p>
 
         <div className="mt-10 max-w-xl mx-auto relative">
