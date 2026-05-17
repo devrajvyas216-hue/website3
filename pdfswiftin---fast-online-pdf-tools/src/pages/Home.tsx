@@ -67,20 +67,17 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-          {tools.map((tool, index) => (
-            <motion.div
+          {tools.map((tool) => (
+            <div
               key={tool.id}
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.02 }}
+              className="flex"
             >
               <Link 
                 to={tool.path}
-                className="group p-6 bg-white border border-slate-100 rounded-[2rem] hover:border-orange-300 hover:bg-orange-50/50 transition-all flex flex-col items-center text-center shadow-sm hover:shadow-xl hover:shadow-orange-100"
+                className="w-full group p-6 bg-white border border-slate-100 rounded-[2rem] hover:border-orange-300 hover:bg-orange-50/50 transition-all flex flex-col items-center text-center shadow-sm hover:shadow-xl hover:shadow-orange-100"
               >
-                <div className="w-24 h-24 mb-4 group-hover:scale-110 transition-transform flex items-center justify-center relative">
-                  <div className="absolute inset-0 bg-orange-100/50 blur-xl rounded-full scale-0 group-hover:scale-100 transition-transform opacity-0 group-hover:opacity-100"></div>
+                <div className="w-24 h-24 mb-4 transition-transform group-hover:scale-105 flex items-center justify-center relative">
+                  <div className="absolute inset-0 bg-orange-100/30 blur-lg rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
                   {tool.image ? (
                     <img 
                       src={tool.image} 
@@ -99,7 +96,7 @@ export default function Home() {
                   {tool.desc}
                 </p>
               </Link>
-            </motion.div>
+            </div>
           ))}
         </div>
       </section>
@@ -191,35 +188,55 @@ export default function Home() {
       {/* Deep SEO Article Section */}
       <section className="bg-white py-24 px-6 border-t border-orange-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-black text-slate-900 mb-8 text-center uppercase tracking-tighter italic">Why PDFswift is the Ultimate Solution for All PDF Problems</h2>
+          <h2 className="text-3xl font-black text-slate-900 mb-8 text-center uppercase tracking-tighter italic">The Most Comprehensive Free PDF Toolbox Online</h2>
           <div className="space-y-12 text-slate-600 leading-relaxed">
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-4">Complete PDF Management Without Compromise</h3>
+              <h3 className="text-xl font-bold text-slate-800 mb-4">Why PDFswift is the #1 Choice for Millions of Students</h3>
               <p>
-                In today's digital landscape, document security is paramount. When you look for a tool to <strong>combine PDF files</strong> or <strong>extract pages from PDF</strong>, you deserve transparency. PDFswift offers 20+ specialized utilities that cater to every need. From simple <strong>PDF rotation</strong> to complex <strong>PDF to Excel</strong> data extraction, our engine preserves document fidelity while ensuring maximum speed. 
+                In the modern academic world, students are constantly handling digital documents. Whether you need to <strong>merge PDF chapters free</strong> for a research project or <strong>compress PDF for email</strong> submissions, the tools you use must be fast, reliable, and secure. PDFswift is specifically designed as the <strong>top free PDF tool for students</strong>. We understand that educational budgets are tight, which is why every single feature on our platform—from <strong>PDF to Word conversion</strong> to <strong>extracting PDF pages</strong>—is completely free, no strings attached.
               </p>
               <p className="mt-4">
-                Our suite includes everything from <strong>PDF to Word converter free</strong> to <strong>JPG to PDF high quality</strong> transformation tools. Unlike other platforms that limit you to 2 files per day, PDFswift is the <strong>best free PDF tool for students</strong> and professionals who need to manage an unlimited number of documents daily. We don't believe in limits—we believe in empowering your workflow with the most efficient browser-based technology available today.
+                Our <strong>online PDF editor free no signup</strong> policy means you can get your homework done in seconds. You don't have to wait for confirmation emails or verify your account. Just upload your file, perform the operation, and download your result. This Frictionless experience makes us the preferred choice for <strong>joining PDF online</strong> during high-pressure finals weeks.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-orange-50/30 p-8 rounded-[2rem] border border-orange-100">
-               <div>
-                  <h4 className="font-black text-orange-600 mb-3 uppercase tracking-widest text-xs">For Students & Researchers</h4>
-                  <p className="text-sm">Manage your assignments, merge voluminous research papers, and optimize file sizes for university portal uploads without spending a penny. It's the perfect <strong>free PDF tool for students</strong> who need to keep their work organized and secure without subscription fees.</p>
-               </div>
-               <div>
-                  <h4 className="font-black text-orange-600 mb-3 uppercase tracking-widest text-xs">For Business Professionals</h4>
-                  <p className="text-sm">Handle sensitive business documents, sign high-stakes contracts with our <strong>Sign PDF</strong> feature, and organize complex project reports with complete confidence knowing your proprietary data never leaves your hardware.</p>
+            
+            <div className="bg-orange-50/50 p-10 rounded-[3rem] border border-orange-100 shadow-inner">
+               <h3 className="text-xl font-bold text-slate-800 mb-6 text-center">Mastering Your PDF Workflow</h3>
+               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div>
+                    <h4 className="font-black text-orange-600 mb-2 uppercase tracking-widest text-[10px]">Document Privacy</h4>
+                    <p className="text-sm">Stop uploading your sensitive transcripts and IDs to unknown servers. Use a <strong>local PDF converter</strong> like PDFswift to <strong>secure PDF with password</strong> without your data ever leaving your browser. Browser-side processing is the future of digital safety.</p>
+                  </div>
+                  <div>
+                    <h4 className="font-black text-orange-600 mb-2 uppercase tracking-widest text-[10px]">High Compatibility</h4>
+                    <p className="text-sm">Our tools are compatible with all major devices. Whether you need to <strong>combine PDF on Mac</strong>, split files on Windows, or convert <strong>images to PDF on Android</strong>, our responsive web interface provides a consistent, high-speed experience everywhere.</p>
+                  </div>
+                  <div>
+                    <h4 className="font-black text-orange-600 mb-2 uppercase tracking-widest text-[10px]">Batch Processing</h4>
+                    <p className="text-sm">Don't waste time doing tasks one by one. Use our <strong>batch JPG to PDF</strong> converter to turn hundreds of photos into a single document instantly. Ideal for digitizing notes or creating digital portfolios for job applications.</p>
+                  </div>
+                  <div>
+                    <h4 className="font-black text-orange-600 mb-2 uppercase tracking-widest text-[10px]">Professional Quality</h4>
+                    <p className="text-sm">Preserve the exact formatting of your documents. Our <strong>PDF to PPT converter</strong> and <strong>Excel to PDF tool</strong> use advanced layout algorithms to ensure your tables, charts, and fonts look perfect in every single conversion.</p>
+                  </div>
                </div>
             </div>
+
             <div>
-              <h3 className="text-xl font-bold text-slate-800 mb-4">High-Precision Conversion Engines with No Registration</h3>
+              <h3 className="text-xl font-bold text-slate-800 mb-4">Unlocking Professional-Grade PDF Power</h3>
               <p>
-                Our <strong>PDF to Word converter</strong> uses sophisticated logic to ensure that your text remains editable and your complex formatting stays exactly as intended. Similarly, our <strong>Image to PDF</strong> converter supports massive batch processing, allowing you to turn an entire stack of high-resolution scans into a single, organized, and lightweight PDF document in seconds. 
+                Professional users often struggle with expensive software subscriptions just to <strong>sign a PDF online</strong> or <strong>watermark a document</strong>. PDFswift democratizes these pro-level features. You can now <strong>add watermark to PDF free</strong>, <strong>unlock password protected PDF</strong>, and <strong>organize PDF pages</strong> with a simple drag-and-drop interface that rivals premium desktop applications.
               </p>
               <p className="mt-4">
-                We've built this platform to be a <strong>no signup PDF editor</strong>. No more dealing with slow, ad-heavy websites or being forced to provide your email address just to get a simple task done. PDFswift is clean, fast, <strong>no registration required</strong>, and remarkably easy to use. It is truly the ultimate <strong>free online PDF toolbox</strong> designed for the modern web.
+                Our commitment to speed means we use <strong>WebAssembly (WASM)</strong> to perform heavy-duty file manipulations. This technology allows our <strong>PDF compressor</strong> to achieve high ratios without losing text clarity, and our <strong>PDF to JPG converter</strong> to render pages at high resolution directly in your browser's memory. When productivity is your goal, PDFswift is the ultimate high-performance <strong>free online PDF toolbox</strong>.
               </p>
+            </div>
+            
+            <div className="border-l-4 border-orange-500 pl-8 py-4 italic">
+              <p className="text-lg text-slate-700 font-medium leading-relaxed">
+                "PDFswift changed my workflow. I no longer have to worry about my company's legal documents being stored on some random server just to merge them. The local processing is brilliant and surprisingly fast."
+              </p>
+              <p className="text-sm text-slate-400 mt-2">— Sarah J., Digital Project Manager</p>
             </div>
           </div>
         </div>
