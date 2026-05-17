@@ -3,7 +3,7 @@ import SEO from '../components/SEO';
 export default function PrivacyPolicy() {
   return (
     <div className="max-w-3xl mx-auto prose prose-slate">
-      <SEO title="Privacy Policy - PDFSwiftin" description="Privacy policy for PDFSwiftin. We respect your data and do not store any files on our servers." />
+      <SEO title="Privacy Policy" description="Privacy policy for PDFswift. We respect your data and do not store any files on our servers." />
       
       <h1 className="text-4xl font-bold mb-8 tracking-tight">Privacy Policy</h1>
       <p className="text-sm text-slate-500">Effective Date: May 14, 2026</p>
@@ -11,7 +11,7 @@ export default function PrivacyPolicy() {
       <section>
         <h2>1. Data Integrity and Privacy</h2>
         <p>
-          At <strong>PDFSwiftin</strong>, your privacy is our core value. Unlike other online PDF tools, our platform 
+          At <strong>PDFswift</strong>, your privacy is our core value. Unlike other online PDF tools, our platform 
           utilizes client-side processing. This means that when you merge, split, or protect a PDF, the actual file 
           <strong>never leaves your web browser</strong>.
         </p>
