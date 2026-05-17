@@ -1,6 +1,6 @@
 {
-  "name": "PDFSwift | PDF Tool Free for Students and All",
-  "description": "The #1 PDF tool free for students and all. PDFSwift provides secure, no-upload PDF tools like merging, splitting, and converting assignments with 100% privacy.",
+  "name": "PDFswift",
+  "description": "PDFswift has solutions for all PDF problems. Merge PDF, Split PDF, Compress PDF, Convert Image to PDF, and use many other free PDF tools online. 100% free, fast, easy, and secure for students and professionals.",
   "requestFramePermissions": [],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
