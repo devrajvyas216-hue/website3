@@ -1,22 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FilePlus, FileMinus, Lock, Image as ImageIcon, ArrowRight, Zap, ShieldCheck, FileCheck, Search, ChevronRight, Apple, FileText } from 'lucide-react';
+import { FilePlus, FileMinus, Lock, Image as ImageIcon, ArrowRight, Zap, ShieldCheck, FileCheck, Search, ChevronRight, Apple, FileText, Grid } from 'lucide-react';
 import { motion } from 'motion/react';
 import SEO from '../components/SEO';
 import { ALL_TOOLS } from '../constants';
-import { useAuth } from '../AuthContext';
+import mascotImg from '../assets/images/pdfswift_cat_mascot_1778995133209.png';
 
 export default function Home() {
-  const { user, loginWithGoogle } = useAuth();
   
-  // Show first 8 tools on home for better density
-  const featuredTools = ALL_TOOLS.slice(0, 8);
-
-  const blogTopics = [
-    { title: "How to Merge PDF Files Without Losing Quality", slug: "merge-pdf-quality" },
-    { title: "Best Practices for Secure PDF Password Protection", slug: "secure-pdf-protection" },
-    { title: "Everything You Need to Know About PDF Compression", slug: "pdf-compression-guide" }
-  ];
+  // Show all tools for a grid layout similar to PDF24
+  const tools = ALL_TOOLS;
 
   return (
     <>
@@ -26,254 +19,266 @@ export default function Home() {
         keywords="pdf problems, merge pdf, split pdf, compress pdf, image to pdf, free pdf tools online, pdfswift"
       />
       
-      <div className="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-4">
-        <div>
-          <h1 className="text-4xl font-black text-slate-900 tracking-tighter sm:text-5xl">
-            {user ? `Welcome back, ${user.displayName?.split(' ')[0]}!` : 'Solutions for All PDF Problems.'}
-          </h1>
-          <p className="text-slate-500 text-lg mt-2 max-w-xl">
-            {user 
-              ? 'Your PDFswift workspace is ready. Access the best free PDF tools online.' 
-              : 'PDFswift provides the ultimate suite of free PDF tools online with instant local processing and no uploads.'
-            }
-          </p>
-        </div>
-        {!user && (
-          <button 
-            onClick={loginWithGoogle}
-            aria-label="Sign up with Google"
-            className="flex items-center gap-3 px-6 py-3 bg-indigo-600 text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-slate-900 transition-all shadow-xl shadow-indigo-100 active:scale-95"
-          >
-            <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="" aria-hidden="true" width="16" height="16" className="invert brightness-0" />
-            Sign Up Free
-          </button>
-        )}
-      </div>
-
-      {/* Hero Stats */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-16">
-        <QuickStat icon={ShieldCheck} label="Privacy" value="Browser-Side" color="text-indigo-600" />
-        <QuickStat icon={Zap} label="Processing" value="Instant" color="text-amber-600" />
-        <QuickStat icon={FileCheck} label="Fidelity" value="100% Asset" color="text-emerald-600" />
-        <QuickStat icon={Lock} label="Security" value="AES-256" color="text-blue-600" />
-      </div>
-
-      {/* Trust & Security Section */}
-      <section className="mb-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-white border border-slate-200 rounded-[2.5rem] p-8 md:p-12 shadow-sm overflow-hidden relative">
-        <div className="absolute -top-24 -left-24 w-64 h-64 bg-indigo-50 rounded-full blur-[80px] opacity-60"></div>
-        <div className="relative z-10 space-y-6">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-50 text-indigo-700 rounded-full text-xs font-black uppercase tracking-widest">
-            <ShieldCheck size={14} /> 100% SECURE & PRIVATE
-          </div>
-          <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight leading-tight">
-            Comprehensive PDF Solutions, <br />
-            <span className="text-indigo-600">Built with 100% Privacy.</span>
-          </h2>
-          <p className="text-slate-500 text-lg leading-relaxed">
-            In an era of data leaks, it is hard to find a reliable suite of tools that doesn't track you. <strong>PDFswift</strong> takes a different path. Your documents are processed <strong>entirely inside your browser</strong>. They are never uploaded to a cloud, never stored on a disk, and never seen by anyone but you.
-          </p>
-          <ul className="space-y-4">
-            <li className="flex items-center gap-3 text-slate-700 font-bold">
-              <div className="w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-[10px]">✓</div>
-              No Registration Required for Basic Tools
-            </li>
-            <li className="flex items-center gap-3 text-slate-700 font-bold">
-              <div className="w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-[10px]">✓</div>
-              Military-Grade Local Encryption
-            </li>
-            <li className="flex items-center gap-3 text-slate-700 font-bold">
-              <div className="w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-[10px]">✓</div>
-              Open Source Processing Logic
-            </li>
-          </ul>
-        </div>
-        <div className="relative group">
-          <div className="absolute -inset-4 bg-indigo-600/5 rounded-[2rem] blur-2xl group-hover:bg-indigo-600/10 transition-all"></div>
-          <img 
-            src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
-            alt="Professional secure digital workspace" 
-            className="relative rounded-3xl shadow-2xl border-8 border-white transform hover:scale-[1.02] transition-transform duration-500 w-full object-cover aspect-[4/3]"
-            referrerPolicy="no-referrer"
-            loading="lazy"
-          />
-          <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-slate-100 max-w-[200px] hidden md:block">
-            <div className="flex items-center gap-2 mb-2 text-indigo-600">
-               <FileCheck size={18} />
-               <span className="text-[10px] font-black uppercase tracking-widest">Verified Swift</span>
+      {/* Hero Section */}
+      <section className="bg-white border-b border-orange-100 py-16 px-6 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-orange-50/50 clip-path-hero hidden lg:block"></div>
+        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12 relative z-10">
+          <div className="flex-1 text-center lg:text-left">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-6">
+              <Zap size={12} className="animate-pulse" /> 100% Browser-Side Processing
             </div>
-            <p className="text-[11px] text-slate-500 leading-tight">ISO-ready browser logic ensures your data stays on your machine.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* SEO Section for Rank */}
-      <section className="mb-20 bg-indigo-50/50 rounded-[2.5rem] p-12 border border-indigo-100">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-black text-slate-900 mb-6 underline decoration-indigo-200 underline-offset-8">Fast, Easy, and Free PDF Tools Online.</h2>
-          <p className="text-slate-600 leading-relaxed mb-6">
-            When users look for free PDF tools, they often find websites filled with ads and slow upload speeds. <strong>PDFswift</strong> fixes this by providing professional-grade tools that work without registration or uploads. Our goal is to provide the best PDF solutions for students and professionals globally.
-          </p>
-          <div className="flex flex-wrap justify-center gap-2">
-            <span className="px-3 py-1 bg-white border border-indigo-200 rounded-full text-[10px] font-bold text-indigo-600 uppercase">#1 Free PDF Tools Online</span>
-            <span className="px-3 py-1 bg-white border border-indigo-200 rounded-full text-[10px] font-bold text-indigo-600 uppercase">Private PDF Editor</span>
-            <span className="px-3 py-1 bg-white border border-indigo-200 rounded-full text-[10px] font-bold text-indigo-600 uppercase">Solutions for All PDF Problems</span>
-          </div>
-        </div>
-      </section>
-
-      {/* Tools Section */}
-      <div className="flex items-center justify-between mb-8">
-        <h2 className="text-2xl font-black text-slate-900 tracking-tight flex items-center gap-2"> 
-           Popular Tools <ChevronRight size={24} className="text-indigo-600" aria-hidden="true" /> 
-        </h2>
-        <Link to="/all-tools" aria-label="Explore all 20 PDF tools" className="text-xs font-black text-indigo-600 hover:bg-indigo-50 px-4 py-2 rounded-lg uppercase tracking-widest transition-colors">
-          Explore All 20 Tools
-        </Link>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 mb-20">
-        {featuredTools.map((tool, index) => (
-          <motion.div
-            key={tool.id}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.05 }}
-          >
-            <Link 
-              to={tool.path}
-              className="group block bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-xl hover:border-indigo-300 transition-all h-full flex flex-col relative overflow-hidden"
-            >
-              {tool.premium && (
-                <div className="absolute top-0 right-0 bg-amber-400 text-amber-950 text-[8px] font-black uppercase px-2 py-1 flex items-center gap-1 rounded-bl-lg">
-                   <Lock size={8} aria-hidden="true" /> Pro
-                </div>
-              )}
-              <div className="flex items-start justify-between mb-6">
-                <div className={`p-4 rounded-xl ${tool.accent} group-hover:scale-110 transition-transform shadow-sm`}>
-                  <tool.icon size={24} aria-hidden="true" width={24} height={24} />
-                </div>
-                <ArrowRight size={18} className="text-slate-200 group-hover:text-indigo-500 transform group-hover:translate-x-1 transition-all" aria-hidden="true" width="18" height="18" />
-              </div>
-              <h3 className="text-lg font-black text-slate-900 mb-2">{tool.name}</h3>
-              <p className="text-xs text-slate-500 leading-relaxed mb-6 flex-grow">
-                {tool.desc}
-              </p>
-            </Link>
-          </motion.div>
-        ))}
-      </div>
-
-      {/* Auth Banner */}
-      <section className="mb-20 bg-slate-900 rounded-[2.5rem] p-12 text-white overflow-hidden relative" style={{ contentVisibility: 'auto' }}>
-        <div className="absolute top-0 right-0 w-96 h-96 bg-indigo-600 rounded-full blur-[60px] md:blur-[120px] opacity-20 -translate-y-1/2 translate-x-1/2"></div>
-        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-           <div>
-             <h2 className="text-3xl sm:text-4xl font-black mb-6 tracking-tight">Unlock the Full Suite.</h2>
-             <p className="text-slate-400 text-lg mb-8 leading-relaxed">
-               Create a free Swift account to unlock pro-grade PDF compression, document conversion, and security unlocks. 
-               All processing remains 100% private in your browser.
-             </p>
-             <div className="flex flex-wrap gap-4">
-                <button 
-                  onClick={loginWithGoogle}
-                  aria-label="Sign up with Google"
-                  className="px-8 py-4 bg-white text-slate-900 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-slate-50 transition-all flex items-center gap-3 shadow-lg"
-                >
-                  <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="" aria-hidden="true" width="20" height="20" className="w-5 h-5" loading="lazy" />
-                  Sign up with Google
-                </button>
-                <button 
-                  onClick={() => alert("Apple Sign-in is coming soon!")}
-                  aria-label="Sign in with Apple ID (Coming Soon)"
-                  className="px-8 py-4 bg-indigo-600 text-white rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-indigo-700 transition-all flex items-center gap-3 shadow-lg"
-                >
-                   <Apple size={20} aria-hidden="true" />
-                   Apple ID
-                </button>
-             </div>
-           </div>
-           <div className="hidden lg:grid grid-cols-2 gap-4">
-              <div className="space-y-4">
-                 <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-6 rounded-2xl">
-                    <p className="text-xs font-bold text-indigo-400 mb-2 uppercase">Pro Feature</p>
-                    <p className="font-bold">PDF to Excel</p>
-                 </div>
-                 <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-6 rounded-2xl">
-                    <p className="text-xs font-bold text-emerald-400 mb-2 uppercase">Pro Feature</p>
-                    <p className="font-bold">HTML to PDF</p>
-                 </div>
-              </div>
-              <div className="space-y-4 translate-y-8">
-                 <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-6 rounded-2xl">
-                    <p className="text-xs font-bold text-amber-400 mb-2 uppercase">Pro Feature</p>
-                    <p className="font-bold">Compress PDF</p>
-                 </div>
-                 <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-6 rounded-2xl">
-                    <p className="text-xs font-bold text-red-400 mb-2 uppercase">Pro Feature</p>
-                    <p className="font-bold">Unlock PDF</p>
-                 </div>
-              </div>
-           </div>
-        </div>
-      </section>
-
-      {/* SEO Content Section */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-20" style={{ contentVisibility: 'auto' }}>
-        <div className="lg:col-span-2 space-y-12">
-          <article className="prose prose-slate max-w-none">
-            <h2 className="text-3xl font-black text-slate-900 mb-8 tracking-tight underline decoration-indigo-500 decoration-8 underline-offset-[12px]">The Ultimate PDF Powerhouse.</h2>
-            <p className="text-slate-600 text-lg leading-relaxed">
-              PDFswift isn't just another online converter. We've built a high-performance engine that runs directly in your browser, bypassing the need for server-side processing which often compromises privacy and speed. 
+            <h1 className="text-5xl md:text-7xl font-black text-slate-900 tracking-tighter leading-[0.9] mb-6">
+              PDF Solutions for <span className="text-orange-500">Every Problem.</span>
+            </h1>
+            <p className="text-slate-500 text-xl max-w-xl mb-10 leading-relaxed font-medium">
+              PDFswift is the purr-fect suite of free PDF tools. Fast, secure, and works entirely in your browser. No uploads, no waiting.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-               <div className="bg-slate-50 p-8 rounded-2xl border border-slate-200">
-                  <h4 className="font-black text-slate-900 mb-4 uppercase tracking-widest text-xs">Privacy Protocol</h4>
-                  <p className="text-sm text-slate-500 leading-relaxed">Your files never touch our servers. We use WebAssembly to perform heavy-duty PDF manipulations locally on your machine.</p>
-               </div>
-               <div className="bg-slate-50 p-8 rounded-2xl border border-slate-200">
-                  <h4 className="font-black text-slate-900 mb-4 uppercase tracking-widest text-xs">Fast Conversion</h4>
-                  <p className="text-sm text-slate-500 leading-relaxed">Instant processing means no waiting for uploads or downloads. The moment you drop a file, it's ready for manipulation.</p>
-               </div>
-            </div>
-          </article>
-        </div>
-
-        <aside className="space-y-6">
-          <div className="bg-slate-900 text-white rounded-[2rem] p-8 shadow-2xl">
-            <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
-               <FileText size={20} className="text-indigo-400" aria-hidden="true" />
-               Latest Guides
-            </h3>
-            <ul className="space-y-6">
-              {blogTopics.map(topic => (
-                <li key={topic.slug} className="group">
-                  <Link to={`/blog/${topic.slug}`} className="text-sm font-bold text-slate-300 hover:text-white flex items-start gap-3 group-hover:translate-x-1 transition-all">
-                    <div className="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-1.5 shrink-0" aria-hidden="true"></div>
-                    {topic.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            <div className="mt-10 pt-6 border-t border-white/10">
-               <Link to="/blog" aria-label="Visit our blog for more guides" className="text-[10px] font-black text-indigo-400 hover:text-white uppercase tracking-widest flex items-center gap-2">
-                 Visit the Swift Blog <ArrowRight size={12} aria-hidden="true" width="12" height="12" />
-               </Link>
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4">
+               <a href="#tools" className="px-10 py-5 bg-orange-500 text-white rounded-3xl font-black text-sm uppercase tracking-widest hover:bg-orange-600 transition-all shadow-2xl shadow-orange-200 active:scale-95 flex items-center gap-3">
+                 Explore PDF Toolbox <ArrowRight size={18} />
+               </a>
             </div>
           </div>
-        </aside>
-      </div>
-    </>
-  );
-}
+          <div className="flex-1 flex justify-center">
+            <motion.div 
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ type: 'spring', damping: 15 }}
+              className="relative"
+            >
+              <div className="absolute inset-0 bg-orange-400/20 blur-[100px] rounded-full"></div>
+              <img 
+                src={mascotImg} 
+                alt="PDFswift Cat" 
+                className="w-72 h-72 md:w-96 md:h-96 object-contain relative z-10"
+              />
+            </motion.div>
+          </div>
+        </div>
+      </section>
 
-function QuickStat({ icon: Icon, label, value, color }: any) {
-  return (
-    <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all group">
-      <div className="flex items-center gap-2 mb-3">
-        <Icon size={16} className="text-slate-400 group-hover:text-indigo-500 transition-colors" aria-hidden="true" width="16" height="16" />
-        <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">{label}</span>
-      </div>
-      <p className={`text-2xl font-black tracking-tight ${color}`}>{value}</p>
-    </div>
+      {/* Tools Grid Section */}
+      <section id="tools" className="py-20 px-6 max-w-6xl mx-auto">
+        <div className="mb-12 flex items-center justify-between">
+          <h2 className="text-3xl font-black text-slate-900 tracking-tight">Our PDF Toolbox</h2>
+          <div className="flex items-center gap-2 text-xs font-bold text-slate-400 uppercase tracking-widest">
+            <Grid size={14} /> {tools.length} Tools Available
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+          {tools.map((tool, index) => (
+            <motion.div
+              key={tool.id}
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.02 }}
+            >
+              <Link 
+                to={tool.path}
+                className="group p-6 bg-white border border-slate-100 rounded-[2rem] hover:border-orange-300 hover:bg-orange-50/50 transition-all flex flex-col items-center text-center shadow-sm hover:shadow-xl hover:shadow-orange-100"
+              >
+                <div className="w-24 h-24 mb-4 group-hover:scale-110 transition-transform flex items-center justify-center relative">
+                  <div className="absolute inset-0 bg-orange-100/50 blur-xl rounded-full scale-0 group-hover:scale-100 transition-transform opacity-0 group-hover:opacity-100"></div>
+                  {tool.image ? (
+                    <img 
+                      src={tool.image} 
+                      alt="" 
+                      className="w-full h-full object-contain relative z-10" 
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div className={`p-4 rounded-2xl ${tool.accent} relative z-10`}>
+                      <tool.icon size={28} className="text-orange-600" />
+                    </div>
+                  )}
+                </div>
+                <h3 className="text-sm font-black text-slate-900 mb-1 group-hover:text-orange-600 transition-colors uppercase tracking-tight">{tool.name}</h3>
+                <p className="text-[10px] text-slate-400 font-medium leading-tight line-clamp-2">
+                  {tool.desc}
+                </p>
+              </Link>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* Trust Stats */}
+      <section className="bg-white border-y border-orange-100 py-12 px-6">
+        <div className="max-w-6xl mx-auto flex flex-wrap justify-between gap-8">
+           <div className="flex items-center gap-4">
+              <div className="w-12 h-12 bg-orange-100 rounded-2xl flex items-center justify-center text-orange-600">
+                <ShieldCheck size={24} />
+              </div>
+              <div>
+                <p className="text-[10px] font-black text-orange-400 uppercase tracking-widest">Privacy</p>
+                <p className="font-black text-slate-900">100% Local</p>
+              </div>
+           </div>
+           <div className="flex items-center gap-4">
+              <div className="w-12 h-12 bg-orange-100 rounded-2xl flex items-center justify-center text-orange-600">
+                <Zap size={24} />
+              </div>
+              <div>
+                <p className="text-[10px] font-black text-orange-400 uppercase tracking-widest">Speed</p>
+                <p className="font-black text-slate-900">Instant Processing</p>
+              </div>
+           </div>
+           <div className="flex items-center gap-4">
+              <div className="w-12 h-12 bg-orange-100 rounded-2xl flex items-center justify-center text-orange-600">
+                <FileCheck size={24} />
+              </div>
+              <div>
+                <p className="text-[10px] font-black text-orange-400 uppercase tracking-widest">Quality</p>
+                <p className="font-black text-slate-900">High Fidelity</p>
+              </div>
+           </div>
+           <div className="flex items-center gap-4">
+              <div className="w-12 h-12 bg-orange-100 rounded-2xl flex items-center justify-center text-orange-600">
+                <Lock size={24} />
+              </div>
+              <div>
+                <p className="text-[10px] font-black text-orange-400 uppercase tracking-widest">Security</p>
+                <p className="font-black text-slate-900">End-to-End</p>
+              </div>
+           </div>
+        </div>
+      </section>
+
+      {/* About & Trust Section (Bottom as requested) */}
+      <section className="py-24 px-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          <div className="space-y-8">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-50 text-orange-700 rounded-full text-xs font-black uppercase tracking-widest">
+              <ShieldCheck size={14} /> PURR-FECT PRIVACY
+            </div>
+            <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-none">
+              The Best Online PDF Tools <br />
+              <span className="text-orange-500 text-6xl">100% Free for You.</span>
+            </h2>
+            <div className="prose prose-slate max-w-none">
+              <p className="text-slate-500 text-lg leading-relaxed">
+                Finding a reliable <strong>merge PDF online</strong> tool or a secure way to <strong>compress PDF files</strong> shouldn't come with hidden costs or privacy risks. PDFswift was built to solve these exact problems. Whether you need to <strong>convert image to PDF</strong>, <strong>split PDF pages</strong>, or <strong>protect PDF with password</strong>, our suite handles everything directly in your browser.
+              </p>
+              <p className="text-slate-500 text-lg leading-relaxed mt-4">
+                Why choose browser-side processing? Traditional PDF converters upload your confidential bank statements, IDs, and legal contracts to remote servers. PDFswift changes the game. By using advanced WebAssembly technology, we perform complex <strong>PDF to Word conversion</strong> and <strong>PDF watermarking</strong> locally on your device. Your data never leaves your computer, making it the most secure choice for professionals and students alike.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+               <div className="bg-white p-6 rounded-[2rem] border border-orange-100 shadow-sm">
+                  <h4 className="font-black text-slate-900 mb-2 uppercase tracking-widest text-[10px] text-orange-500">Fast Browser Conversion</h4>
+                  <p className="text-xs text-slate-500 leading-relaxed">Our <strong>JPG to PDF</strong> and <strong>Word to PDF</strong> converters are optimized for speed. No upload queues means instant results every single time.</p>
+               </div>
+               <div className="bg-white p-6 rounded-[2rem] border border-orange-100 shadow-sm">
+                  <h4 className="font-black text-slate-900 mb-2 uppercase tracking-widest text-[10px] text-orange-500">Secure PDF Encryption</h4>
+                  <p className="text-xs text-slate-500 leading-relaxed font-medium">Use our <strong>Protect PDF</strong> tool to add military-grade AES-256 encryption to your files without sharing your passwords with any server.</p>
+               </div>
+            </div>
+          </div>
+          <div className="relative">
+            <div className="absolute -inset-10 bg-orange-500/5 rounded-full blur-3xl shadow-2xl"></div>
+            <img 
+              src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+              alt="Secure and Fast PDF Tools" 
+              className="relative rounded-[3rem] shadow-2xl border-[12px] border-white w-full h-[500px] object-cover"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Deep SEO Article Section */}
+      <section className="bg-white py-24 px-6 border-t border-orange-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-black text-slate-900 mb-8 text-center uppercase tracking-tighter italic">Why PDFswift is the Ultimate Solution for All PDF Problems</h2>
+          <div className="space-y-12 text-slate-600 leading-relaxed">
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-4">Complete PDF Management Without Compromise</h3>
+              <p>
+                In today's digital landscape, document security is paramount. When you look for a tool to <strong>combine PDF files</strong> or <strong>extract pages from PDF</strong>, you deserve transparency. PDFswift offers 20+ specialized utilities that cater to every need. From simple <strong>PDF rotation</strong> to complex <strong>PDF to Excel</strong> data extraction, our engine preserves document fidelity while ensuring maximum speed. 
+              </p>
+              <p className="mt-4">
+                Our suite includes everything from <strong>PDF to Word converter free</strong> to <strong>JPG to PDF high quality</strong> transformation tools. Unlike other platforms that limit you to 2 files per day, PDFswift is the <strong>best free PDF tool for students</strong> and professionals who need to manage an unlimited number of documents daily. We don't believe in limits—we believe in empowering your workflow with the most efficient browser-based technology available today.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-orange-50/30 p-8 rounded-[2rem] border border-orange-100">
+               <div>
+                  <h4 className="font-black text-orange-600 mb-3 uppercase tracking-widest text-xs">For Students & Researchers</h4>
+                  <p className="text-sm">Manage your assignments, merge voluminous research papers, and optimize file sizes for university portal uploads without spending a penny. It's the perfect <strong>free PDF tool for students</strong> who need to keep their work organized and secure without subscription fees.</p>
+               </div>
+               <div>
+                  <h4 className="font-black text-orange-600 mb-3 uppercase tracking-widest text-xs">For Business Professionals</h4>
+                  <p className="text-sm">Handle sensitive business documents, sign high-stakes contracts with our <strong>Sign PDF</strong> feature, and organize complex project reports with complete confidence knowing your proprietary data never leaves your hardware.</p>
+               </div>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-800 mb-4">High-Precision Conversion Engines with No Registration</h3>
+              <p>
+                Our <strong>PDF to Word converter</strong> uses sophisticated logic to ensure that your text remains editable and your complex formatting stays exactly as intended. Similarly, our <strong>Image to PDF</strong> converter supports massive batch processing, allowing you to turn an entire stack of high-resolution scans into a single, organized, and lightweight PDF document in seconds. 
+              </p>
+              <p className="mt-4">
+                We've built this platform to be a <strong>no signup PDF editor</strong>. No more dealing with slow, ad-heavy websites or being forced to provide your email address just to get a simple task done. PDFswift is clean, fast, <strong>no registration required</strong>, and remarkably easy to use. It is truly the ultimate <strong>free online PDF toolbox</strong> designed for the modern web.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SEO Keywords Cloud - Hidden but available for crawlers */}
+      <section className="bg-slate-50 py-12 px-6 overflow-hidden select-none opacity-40">
+        <div className="max-w-6xl mx-auto flex flex-wrap gap-x-6 gap-y-4 justify-center text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+          <span>Merge PDF Free</span>
+          <span>Compress PDF Online</span>
+          <span>PDF to Word Converter</span>
+          <span>JPG to PDF High Speed</span>
+          <span>Split PDF Pages</span>
+          <span>Protect PDF with Password</span>
+          <span>Extract PDF Pages</span>
+          <span>PDF Watermarker</span>
+          <span>Sign PDF Online Free</span>
+          <span>PDF to Excel Table Extraction</span>
+          <span>Rotate PDF Pages</span>
+          <span>Unlock PDF Restrictions</span>
+          <span>PDF to JPG Converter</span>
+          <span>Combine PDF Files Mac</span>
+          <span>Free Tools for Students</span>
+        </div>
+      </section>
+
+      {/* Guides Section */}
+      <section className="bg-slate-900 py-24 px-6 relative overflow-hidden">
+        <div className="absolute -top-24 -left-24 w-96 h-96 bg-orange-500/10 rounded-full blur-[120px]"></div>
+        <div className="max-w-6xl mx-auto relative z-10">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+            <div>
+              <h2 className="text-4xl font-black text-white tracking-tight mb-4">Master Your PDFs</h2>
+              <p className="text-slate-400 text-lg max-w-xl">
+                Expert tips and guides to help you navigate document management like a pro.
+              </p>
+            </div>
+            <Link to="/blog" className="px-8 py-4 bg-orange-500 text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-orange-600 transition-all flex items-center gap-2 self-start">
+               Visit the Blog <ChevronRight size={16} />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              { title: "Merging Without Quality Loss", date: "May 2026", category: "Basics" },
+              { title: "Securing Sensitive Records", date: "April 2026", category: "Security" },
+              { title: "Efficient Batch Conversions", date: "March 2026", category: "Workflow" }
+            ].map((article, i) => (
+              <div key={i} className="group bg-white/5 border border-white/10 p-8 rounded-[2.5rem] hover:bg-white/10 transition-all cursor-pointer">
+                <p className="text-orange-400 text-[10px] font-black uppercase tracking-widest mb-4">{article.category} — {article.date}</p>
+                <h3 className="text-xl font-bold text-white mb-6 group-hover:text-orange-400 transition-colors">{article.title}</h3>
+                <div className="flex items-center gap-2 text-white/40 text-[10px] font-black uppercase tracking-widest group-hover:text-white transition-colors">
+                  Read Guide <ArrowRight size={12} />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
