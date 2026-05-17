@@ -55,14 +55,14 @@ export default function ImageToPDF() {
   return (
     <div className="max-w-4xl mx-auto">
       <SEO 
-        title="Convert Photo to PDF Online Free - Best PDF Tool Free for Students and All" 
-        description="The safest PDF tool free for students and all to convert JPG and PNG pictures to PDF. Instant, higher quality, and 100% private processing for student assignments."
-        keywords="pdf tool free for students and all, free tools for students, photo to pdf student, jpg to pdf converter"
+        title="Convert Photo to PDF Online Free – PDFswift" 
+        description="The safest online tool to convert JPG and PNG pictures to PDF. Instant, high quality, and 100% private processing in your browser."
+        keywords="image to pdf, photo to pdf, jpg to pdf, png to pdf, pdfswift converter"
       />
 
       <div className="mb-8 text-center sm:text-left">
         <h1 className="text-3xl font-bold text-slate-900 tracking-tight">Convert Photos to PDF Online Free</h1>
-        <p className="text-slate-500 text-sm mt-1">Convert your JPG and PNG images into high-quality PDF documents instantly.</p>
+        <p className="text-slate-500 text-sm mt-1">Convert your JPG and PNG images into high-quality PDF documents instantly using PDFswift.</p>
       </div>
 
       <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm mb-12">
@@ -131,11 +131,10 @@ export default function ImageToPDF() {
          <div className="p-8 bg-slate-900 rounded-2xl text-white">
             <h3 className="text-sm font-bold mb-4 opacity-80">Content Tip</h3>
             <p className="text-xs text-slate-400 leading-relaxed">
-              Use PDFSwift to combine your scanned documents into a single professional PDF for easy sharing.
+              Use PDFswift to combine your scanned documents into a single professional PDF for easy sharing.
             </p>
          </div>
       </div>
     </div>
   );
 }
-
